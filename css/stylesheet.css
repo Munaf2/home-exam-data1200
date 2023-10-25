@@ -5,12 +5,8 @@
     box-sizing: border-box;
   }
 
-body{
 
-    background-color: #000064;
-}
-
-/*navigation bar in header*/
+/*Navigation bar in header*/
 nav{
     display:flex;
     justify-content: space-between;
