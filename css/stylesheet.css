@@ -10,6 +10,7 @@ body{
     background-color: #000064;
 }
 
+/*navigation bar in header*/
 nav{
     display:flex;
     justify-content: space-between;
@@ -17,7 +18,7 @@ nav{
     padding:1rem;
 }
 
-.nav-listen{
+.navigations{
     display:flex;
     justify-content: flex-end; /* moves nav buttons to the left*/
     list-style: none; 
@@ -30,7 +31,7 @@ li > a{
     color:black;
 }
 
-.button{
+.button{ /*navigation buttons*/
     margin-right: 1rem;
     padding: 1em;
     border: 1px solid black;
@@ -38,7 +39,7 @@ li > a{
     width: fit-content; 
 }
 
-.logo{
+.logo{ /*logo*/
     flex:2;
     max-width:8%;
     height:fit-content;
@@ -104,7 +105,7 @@ p{
     margin-bottom: 1rem;
 }
 .logo{
-    width: 100%;
+    width: 20%; 
     
 }
 .sosiale-medier{
