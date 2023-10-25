@@ -1,5 +1,12 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
 body{
-    margin:0;
+
     background-color: #000064;
 }
 
@@ -10,14 +17,14 @@ nav{
     padding:1rem;
 }
 
-ul{
+.nav-listen{
     display:flex;
     justify-content: flex-end; /* moves nav buttons to the left*/
     list-style: none; 
 }
 
 li > a{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;  /*Her burde vi ikke legge font-family, vi burde ha samme font-family for hele siden*/
     font-size: 1.2rem;
     font-variant: all-small-caps; /*font in uppercase*/
     color:black;
@@ -49,19 +56,95 @@ li > a{
 
 }
 
-h1{
+h1{  
     grid-column-start: 2;
     grid-column-end: 6;
 }
 
 p{
-    grid-column-start: 2;
+    grid-column-start: 2;   
     grid-column-end: 6;
 }
-
 .index-images{
     max-width: 100%;
     height: auto;
     grid-column-start: 2;
     grid-column-end: 6;
+}
+.avsnitt1, .avsnitt2{
+    padding: 25px 5px;
+    line-height: 1.5; /*Linke avstand*/
+}
+
+
+
+
+/*FOOTER*/
+.footer{
+    border-top: 1px solid #eee;
+    padding: 2rem 0 ;
+    background-color: #f1f8fc;
+}
+
+.container-footer{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr; 
+    gap: 20px; /* her velger vi mellomrom mellom de to kolonnene */
+    margin-bottom: 30px;
+
+}
+
+/*Dette er logo kolonnen (den venstre kolonnnen)*/
+.logo-kolonne{
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+}
+.logo-footer{
+    margin-bottom: 1rem;
+}
+.logo{
+    width: 100%;
+    
+}
+.sosiale-medier{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+
+}
+.sosiale-link:hover,
+.sosiale-link:active {
+    color: #ccc;
+}
+
+.footer-link{
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+/**Dette er kontakt oss kolonnen (venstre kolonne**/
+.copyright{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.adresse-tittel{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.address{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.footer-link{
+  text-decoration: none;
+  color: #312e2e;
+
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #ddc7c7;
 }
