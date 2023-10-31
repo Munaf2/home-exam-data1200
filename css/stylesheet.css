@@ -1,154 +1,267 @@
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
-
-/*Navigation bar in header*/
-nav{
-    display:flex;
-    justify-content: space-between;
-    background-color: #f1f8fc;
-    padding:1rem;
 }
 
-.navigations{
-    display:flex;
-    justify-content: flex-end; /* moves nav buttons to the left*/
-    list-style: none; 
-}
+body {
 
-.button{ /*navigation buttons*/
-    margin-right: 1rem;
-    padding: 1em;
-    width: fit-content; 
-}
-
-.button a{ /*navigation links*/
-    font-family:'Nunito',sans-serif;
-    color:#000000;
-    font-variant: all-small-caps;
-    font-weight: 900;
-    font-size: 1.2rem;
-    text-decoration: none;
-}
-
-.button a:hover{
-    border-radius: #000064;
-}
-
-.button a:active{
     background-color: #000064;
 }
 
-.logo{ /*logo*/
-    flex:2;
-    max-width:8%;
-    height:fit-content;
+/*navigation bar in header*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f8fc;
+    padding: 1rem;
+}
+
+.navigations {
+    display: flex;
+    justify-content: flex-end;
+    /* moves nav buttons to the left*/
+    list-style: none;
+}
+
+li>a {
+    font-family: Arial, Helvetica, sans-serif;
+    /*Her burde vi ikke legge font-family, vi burde ha samme font-family for hele siden*/
+    font-size: 1.2rem;
+    font-variant: all-small-caps;
+    /*font in uppercase*/
+    color: black;
+}
+
+.button {
+    /*navigation buttons*/
+    margin-right: 1rem;
+    padding: 1em;
+    border: 1px solid black;
+    margin-left: 0.5rem;
+    width: fit-content;
+}
+
+.logo {
+    /*logo*/
+    flex: 2;
+    max-width: 8%;
+    height: fit-content;
     align-self: center;
 }
 
-.content{
+.content {
     display: grid;
     max-width: 75%;
-    margin: 0 auto; /* horizontally centers the container */
-    grid-template-columns: repeat(6,1fr); /*divide container into 6 equal fractions*/
+    margin: 0 auto;
+    /* horizontally centers the container */
+    grid-template-columns: repeat(6, 1fr);
+    /*divide container into 6 equal fractions*/
     grid-template-rows: 100px;
     background-color: white;
     padding: 1rem;
 
 }
 
-h1{  
+h1 {
     grid-column-start: 2;
     grid-column-end: 6;
 }
 
-p{
-    grid-column-start: 2;   
+p {
+    grid-column-start: 2;
     grid-column-end: 6;
 }
-.index-images{
+
+.index-images {
     max-width: 100%;
     height: auto;
     grid-column-start: 2;
     grid-column-end: 6;
 }
-.avsnitt1, .avsnitt2{
+
+.avsnitt1,
+.avsnitt2 {
     padding: 25px 5px;
-    line-height: 1.5; /*Linke avstand*/
+    line-height: 1.5;
+    /*Linke avstand*/
 }
 
 
 
 
 /*FOOTER*/
-.footer{
+.footer {
     border-top: 1px solid #eee;
-    padding: 2rem 0 ;
+    padding: 2rem 0;
     background-color: #f1f8fc;
 }
 
-.container-footer{
+.container-footer {
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr; 
-    gap: 20px; /* her velger vi mellomrom mellom de to kolonnene */
+    grid-template-columns: 0.5fr 0.5fr;
+    gap: 20px;
+    /* her velger vi mellomrom mellom de to kolonnene */
     margin-bottom: 30px;
 
 }
 
 /*Dette er logo kolonnen (den venstre kolonnnen)*/
-.logo-kolonne{
+.logo-kolonne {
     display: flex;
     flex-direction: column;
     padding-left: 70px;
 }
-.logo-footer{
+
+.logo-footer {
     margin-bottom: 1rem;
 }
-.logo{
-    width: 20%; 
-    
+
+.logo {
+    width: 20%;
+
 }
-.sosiale-medier{
+
+.sosiale-medier {
     list-style: none;
     display: flex;
     gap: 1.5rem;
 
 }
+
 .sosiale-link:hover,
 .sosiale-link:active {
     color: #ccc;
 }
 
-.footer-link{
+.footer-link {
     height: 2.4rem;
     width: 2.4rem;
 }
 
 /**Dette er kontakt oss kolonnen (venstre kolonne**/
-.copyright{
+.copyright {
     margin-top: 20px;
     font-size: 20px;
 }
-.adresse-tittel{
+
+.adresse-tittel {
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 20px;
     margin-top: 5px;
 }
-.address{
+
+.address {
     font-size: 15px;
     padding-bottom: 10px;
 }
-.footer-link{
-  text-decoration: none;
-  color: #312e2e;
 
+.footer-link {
+    text-decoration: none;
+    color: #312e2e;
 }
 
 .footer-link:hover,
 .footer-link:active {
-  color: #ddc7c7;
+    color: #ddc7c7;
 }
+
+
+
+
+
+
+/*         css til topical page         */
+
+.topical {
+    background-color: rgb(227, 227, 219);
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+
+.overskrift {
+    text-align: left;
+    padding-top: 1rem;
+    justify-content: space-between;
+    background-color: grey;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-weight: 900;
+}
+
+.secondnav a{
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.secondnav a:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+.secondnav a.split{
+  
+}
+
+.overskrift2{
+    font-size: 1.8rem;
+}
+
+.smartphones{
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+/* Grid for topical siden */ 
+.grid-container{
+    display: grid;
+    grid-template-columns: minmax(500px, 40vw), minmax(300px, 20vw), auto;
+    grid-template-rows: minmax(100px, auto);
+}
+
+.introtekst{
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.terms{
+    grid-column: 1 / 2;
+    grid-row: 2;
+    background-size: cover;
+}
+
+
+
+h2 {
+    font-size: 2rem;
+    padding-top: 0.8rem;
+}
+
+p {
+    font-size: 1.3rem;
+    padding-top: 1rem;
+
+}
+
+.bilde1,
+.terms {
+    background-color: grey;
+}
+
+.caption {
+    font-size: 0.9rem;
+    font-style: normal;
+}
+
+.bilder {
+    border-radius: 8px;
+    padding-top: 1rem;
+}
+

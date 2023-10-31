@@ -3,64 +3,118 @@
 
 <head>
     <meta charset="UTF-8">
-    <link type="css" rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Topical page</title>
 </head>
 
-<body>
-    <header>
-        <nav>
-            <title>Topical page</title>
-        </nav>
-    </header>
+<body class="topical">
+    <nav>
+        <img class="logo" src="./images/logo_oslomet_gul.png" alt="Oslomet logo" />
+        <ul class="navigations">
+            <li class="first button"><a href="#">Home</a></li>
+            <li class="button"><a href="#">Accessibility</a></li>
+            <li class="button"><a href="./topical.html">Topical page</a></li>
+            <li class="button"><a href="#">Our campus</a></li>
+            <li class="button"><a href="#">About us</a></li>
+        </ul>
+    </nav>
 
+    <!-- Starten på topical siden -->
     <main>
         <article>
-            <h1>Smarthones and universal design</h1>
-            <p>
-                Norwegian government chooses to implement the European Accessibility Act
-                into Norwegian law and is prepared to issue large fines for digital services,
-                or devices that do not comply and adapt to the
-                basic principles of universal design.
-                To what degree smartphones fulfills the principles of universal design
-            </p>
+            <div class="overskrift">
+                <h1 class="overskrift1">Universal </h1>
+                <h1 class="overskrift2"> Design</h1>
+            </div>
+
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
         </article>
     </main>
 
-    <img src="/images/smartphones.jpeg" alt="Evolution of the Mobile Phone">
-
-    <div class="terms">
-        <h2>
-            Key terms
-        </h2>
-        <p>
-            Dette er første key term
-        </p>
-        <p>
-            Dette er andre key term
-        </p>
-        <p>
-            Dette er tredje key term
-        </p>
-
-        <figure>
-            <img src="./images/phones.jpeg" alt="Smartphones and mobile phones" />
-            <figcaption>Mobile phone evolution</figcaption>
-        </figure>
+    <!-- search bar, til å kunne se på andre produkter laget med 
+    universal design.-->
+    <div class="secondnav">
+        <a class="atm" href="#ATM">ATM Machines</a>
+        <a class="books" href="#E-books">E-books</a>
+        <a class="operating" href="#Operating systems">Operating systems</a>
+        <a class="transport" href="#Passenger transport">Passenger transport</a>
+        <a class="split" href="#split"> </a>
     </div>
 
+    <p class="smartphones"> Smartphones</p>
+    <!-- Innledning etter overskriften -->
+    <p class="intro">
+        Norwegian government chooses to implement the European Accessibility Act
+        into Norwegian law and is prepared to issue large fines for digital services,
+        or devices that do not comply and adapt to the
+        basic principles of universal design.
+        To what degree smartphones fulfills the principles of universal design
+    </p>
+    <p> Smartphones</p>
+
+
+    <!-- Dette er grid for key words på siden-->
+
+
+    <div class="grid-container">
+        <div class="introtekst">
+            <!-- Foto: fra nettiden Medium.com artikkel "The evolution of mobile devices" -->
+            <figure class="bilder">
+                <img src="/images/smartphones.jpeg" alt="Evolution of the Mobile Phone">
+                <figcaption class="caption">Mobile phone evolution</figcaption>
+            </figure>
+        </div>
+
+        <div class="terms">
+            <h2>
+                Key terms
+            </h2>
+            <p>
+                Universal design is based on creating products that ensure
+                accessibility and usability for all people no matter their
+                situation or state.</p>
+            <p>
+                Participatory processes is method that ensure that all people
+                involved in a decision has a say in it so that everyone is
+                represented when deciding how to develop something. </p>
+            <p>
+                Simple and Intuitive Use: The design should be easy to understand,
+                regardless of the user's experience, knowledge, language skills,
+                or current concentration level. </p>
+
+            <!-- Foto: S92063042 fra nettiden Medium.com -->
+            <figure class="bilde1">
+                <img src="./images/phones.jpeg" alt="Smartphones and mobile phones" />
+                <figcaption class="caption">Mobile phone evolution</figcaption>
+            </figure>
+        </div>
+
+    </div>
     <div class="smarthphonesusage">
         <h2>
             The current usage of smartphones in everyday life
         </h2>
         <p>
-            Her skriver jeg om bruken...
+            Smartphones are widely used in the world and almost
+            everyone has one. Most people rely on their smartphones to
+            communicate with others and really depend on them to get
+            through everyday life. The smartphone is used to pay bills,
+            access personal files and some people even rely on it to do
+            their jobs. Other usage of smartphones in everyday life is
+            social media, news, navigation, and entertainment such as
+            games and movies.
         </p>
+
         <p> For more information visit
-            <a href="https://www.insiderintelligence.com/insights/mobile-users-smartphone-usage/" 
-            target="_blank">Insiderintelligence 
-        </a>
+            <a href="https://www.insiderintelligence.com/insights/mobile-users-smartphone-usage/"
+                target="_blank">Insiderintelligence
+            </a>
         </p>
     </div>
 
@@ -69,14 +123,20 @@
             Three ways this technology fails to comply with key principles in universal design
         </h2>
         <p>
-            teksten
+            The first problem with this technology is that it has a
+            complicated and advanced design, especially for elder people.
+            It could be difficult to navigate through the phone and even
+            harder to adjust and personal customizations that would make
+            it easier to use the smartphone. Also, there are a lot of
+            functions and buttons that change settings, modes etc. and it is ten
+            hard to keep track of them and even harder noticing if you
+            accidentally pressed one.
         </p>
 
-        <!-- Endre denne linken til en relevant link-->
-        <p> For more information visit
-            <a href="https://www.insiderintelligence.com/insights/mobile-users-smartphone-usage/" 
-            target="_blank">Insiderintelligence 
-        </a>
+        <p> Read this research paper for more information
+            <a href="https://www.researchgate.net/publication/285675840_Inclusive_design_and_human_factors_Designing_mobile_phones_for_older_users"
+                target="_blank">ResearchGate
+            </a>
         </p>
     </div>
 
@@ -85,12 +145,15 @@
             Three ways this technology complies with key principles in universal design
         </h2>
         <p>
-            teksten
+            Smartphones have many great built-in features that make it
+            easier for people to use them such as screen readers, size
+            adjustments and voice commands. This makes the technology
+            more user friendly and more adaptable for everyone to use.
         </p>
         <p> For more information visit
-            <a href="https://universaldesign.ie/What-is-Universal-Design/Case-studies-and-examples/Examples/Mobile-phone/" 
-            target="_blank">universaldesign 
-        </a>
+            <a href="https://universaldesign.ie/What-is-Universal-Design/Case-studies-and-examples/Examples/Mobile-phone/"
+                target="_blank">universaldesign
+            </a>
         </p>
     </div>
 
@@ -100,22 +163,113 @@
             design on all digital products?
         </h2>
         <p>
-            diskusjonsdelen 
+            First of all, more people will be able to use the products and
+            they will be more user-friendly. This will make digital products
+            more accessible and included to all people in society. If the
+            product does not comply with the law, there will be economic
+            consequences through fines. This could hurt small businesses
+            who cannot afford to make a mistake in production and in the
+            worst case could lead to bankruptcy.
         </p>
         <p> For more information visit
             <a href="https://www.mckinsey.com/capabilities/mckinsey-design/how-we-help-clients/design-blog/accessible-design-means-better-design"
-            target="_blank">McKinsey&Company 
-        </a>
+                target="_blank">McKinsey&Company
+            </a>
         </p>
     </div>
+
+
+
+    <!--
+ <div>
+
+            <div class="bilder">
+                <a target="_blank" href="img_5terre.jpg">
+                    <img src="img_5terre.jpg" alt="Cinque Terre">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="./images/bilde1.jpeg">
+                    <img src="./images/bilde1.jpeg" alt="Mobiltelefon på 1990-tallet">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="img_lights.jpg">
+                    <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="img_mountains.jpg">
+                    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+            </div>
+
+    </div>
+    -->
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="logo-kolonne">
+                <a href="#" class="logo-footer">
+                    <img class="logo" alt="OsloMet logo" src="images/logo_oslomet_gul.png">
+
+                </a>
+                <ui class="sosiale-medier">
+                    <li>
+                        <a class="sosiale-link" href="#">
+                            <i class="fab fa-facebook"></i> <!--facebok-ikon -->
+                        </a>
+
+                    </li>
+                    <li>
+                        <a class="sosiale-link" href="#">
+                            <i class="fab fa-instagram"></i><!-- instagram-ikon -->
+                        </a>
+                    </li>
+                    <li>
+                        <a class="sosiale-link" href="#">
+                            <i class="fab fa-linkedin-in"></i> <!-- LinkedIn-ikon -->
+                        </a>
+                    </li>
+                </ui>
+                <p class="copyright">Copyright &copy; </p>
+
+            </div>
+            <div class="adresse-kolonne">
+                <p class="adresse-tittel">Kontakt oss </p>
+                <address class="kontakt">
+                    <p class="address">
+                        Pilestredet 46. Studenttorget
+                    </p>
+                    <p class="adresse-link">
+                        <a class="footer-link" href="tel:67-45-78-00">67-45-78-00</a><br />
+                        <a class="footer-link" href="mailto:hello@omnifood.com">Oslomet@test.com</a>
+                    </p>
+                </address>
+            </div>
 </body>
 
 </html>
 
 <!--
-#bruke picture element??
+# bruke picture element??
 # skal css være i kronologisk rekkefølge for side etter hverandre?
 # link til external pages, burde en være button, en image osv eller holde meg til samme?
 
+
 Hva mener han med at den skal være annerledes, er det noe jeg burde vise frem her?
+
+Hvis jeg tar en kode fra w3school er det mulig å kunne se det?
+I så fall skal jeg bare forklare koden
 -->
+
+
+
+<!-- © 2023 Universell Design -->
