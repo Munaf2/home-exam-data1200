@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Lenke til fontawsome for å bruke sosial medier ikoner-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Topical page</title>
 </head>
 
@@ -33,27 +35,30 @@ Dette er de andre tingene med universal design
         <a class="split" href="#split"> </a>
     </div>
 
-
 -->
 
 
-    <p class="smartphones"> Smartphones</p>
-    <!-- Innledning etter overskriften -->
-    <p class="intro">
-        Norwegian government chooses to implement the European Accessibility Act
-        into Norwegian law and is prepared to issue large fines for digital services,
-        or devices that do not comply and adapt to the
-        basic principles of universal design.
-        To what degree smartphones fulfills the principles of universal design
-    </p>
-    <p> Smartphones</p>
+    
+
+<!-- FLEX-->
 
 
-    <!-- Dette er grid for key words på siden-->
-
-
-    <div class="grid-container">
-        <div class="introtekst">
+<section>
+    <div class="flex-container">
+        <div class="introtekst"> 
+    
+        <p class="smartphones"> Smartphones</p>
+    
+        <p class="intro">
+            Norwegian government chooses to implement the European Accessibility Act
+            into Norwegian law and is prepared to issue large fines for digital services,
+            or devices that do not comply and adapt to the
+            basic principles of universal design.
+            To what degree smartphones fulfills the principles of universal design
+        </p>
+    
+        <p> Smartphones</p>
+    
             <!-- Foto: fra nettiden Medium.com artikkelnavn: "The evolution of mobile devices" (forfatter ikke oppgitt på)
             Link: https://medium.com/@s92063042/history-and-evolution-of-smartphones-17987e6f91d1
             -->
@@ -62,7 +67,9 @@ Dette er de andre tingene med universal design
                 <figcaption class="caption">Mobile phone evolution</figcaption>
             </figure>
         </div>
-
+        
+    
+    
         <div class="terms">
             <h2>
                 Key terms
@@ -79,7 +86,7 @@ Dette er de andre tingene med universal design
                 Simple and Intuitive Use: The design should be easy to understand,
                 regardless of the user's experience, knowledge, language skills,
                 or current concentration level. </p>
-
+    
             <!-- Foto: S92063042 fra nettiden techpoint.africa 
             Artikkelnavn: Evolution of mobile phones in Nigeria: How competition made expensive phones cheap
             Link: https://techpoint.africa/2020/02/28/mobile-phones-evolution-nigeria/ -->
@@ -87,14 +94,20 @@ Dette er de andre tingene med universal design
                 <img src="./images/phones.jpeg" alt="Smartphones and mobile phones" />
                 <figcaption class="caption">Mobile phone evolution</figcaption>
             </figure>
-        </div>
-
     </div>
-    <div class="smarthphonesusage">
-        <h2>
+</section>
+
+
+
+
+
+
+
+<div class="smarthphonesusage">
+    <h2>
             The current usage of smartphones in everyday life
-        </h2>
-        <p>
+    </h2>
+    <p>
             Smartphones are widely used in the world and almost
             everyone has one. Most people rely on their smartphones to
             communicate with others and really depend on them to get
@@ -103,9 +116,9 @@ Dette er de andre tingene med universal design
             their jobs. Other usage of smartphones in everyday life is
             social media, news, navigation, and entertainment such as
             games and movies.
-        </p>
+    </p>
 
-        <p> For more information visit
+    <p> For more information visit
             <a href="https://www.insiderintelligence.com/insights/mobile-users-smartphone-usage/"
                 target="_blank">Insiderintelligence
             </a>
@@ -174,44 +187,64 @@ Dette er de andre tingene med universal design
 
 
 
-    <!--
- <div>
-
-            <div class="bilder">
-                <a target="_blank" href="img_5terre.jpg">
-                    <img src="img_5terre.jpg" alt="Cinque Terre">
-                </a>
-                <div class="desc">Add a description of the image here</div>
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="./images/bilde1.jpeg">
-                    <img src="./images/bilde1.jpeg" alt="Mobiltelefon på 1990-tallet">
-                </a>
-                <div class="desc">Add a description of the image here</div>
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="img_lights.jpg">
-                    <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-                </a>
-                <div class="desc">Add a description of the image here</div>
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="img_mountains.jpg">
-                    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
-                </a>
-                <div class="desc">Add a description of the image here</div>
-            </div>
-
-    </div>
-    -->
 
 
-</body>
 
-</html>
+
+   <!--FOOTER-->
+   <footer class="bottom">
+    <div class="container-footer">
+     <div class="logo-kolonne">
+         <a href="#" class="logo-footer"> 
+         </a>
+         <ui class="sosiale-medier">
+             <li> 
+                 <a class="sosiale-link" href="#">
+                     <i class="fab fa-facebook"></i> <!--facebok-ikon -->
+                 </a>
+ 
+             </li>
+             <li>
+                 <a class="sosiale-link" href="#">
+                     <i class="fab fa-instagram"></i><!-- instagram-ikon -->
+                 </a>
+             </li>
+             <li>
+                 <a class="sosiale-link" href="#">
+                     <i class="fab fa-twitter"></i> <!-- LinkedIn-ikon -->
+                 </a>
+             </li>
+             <li>
+                 <a class="sosiale-link" href="#">
+                     <i class="fab fa-linkedin-in"></i> <!-- LinkedIn-ikon -->
+                 </a>
+             </li>
+         </ui>
+         <p class="copyright">Copyright &copy; </p>
+         
+        </div>
+        <div class="adresse-kolonne">
+            <p class="adresse-tittel">Kontakt oss </p>
+            <address class="kontakt">
+              <p class="address">
+                Pilestredet 35. Studenttorget
+              </p>
+              <p class="adresse-link">
+                <a class="footer-link" href="tel:67-45-78-00">67-45-78-00</a
+                ><br />
+                <a class="footer-link" href="mailto:hello@omnifood.com"
+                  >Oslomet@test.com</a
+                >
+              </p>
+            </address>
+        </div>
+    
+    </footer>
+ 
+
+
+
+
 
 <!--
 # bruke picture element??
