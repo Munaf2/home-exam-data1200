@@ -44,9 +44,9 @@ li>a {
 
 .logo {
     /*logo*/
-    flex: 2;
+    flex: 1;
     max-width: 8%;
-    height: fit-content;
+    height: auto;
     align-self: center;
 }
 
@@ -115,11 +115,6 @@ p {
 
 .logo-footer {
     margin-bottom: 1rem;
-}
-
-.logo {
-    width: 20%;
-
 }
 
 .sosiale-medier {
