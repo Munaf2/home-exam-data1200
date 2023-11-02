@@ -185,7 +185,14 @@ p {
     font-weight: 500;
 }
 
-.top{
+.menuicon > div{
+  width: 40px;
+  height: 7px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+.top {
     background-color: rgb(194, 194, 183);
     margin-left: -3rem;
     margin-right: -3rem;
@@ -206,10 +213,6 @@ p {
     display: flex;
 }
 
-.flex-container > .introtekst, .terms, .smartphones {
-  
-}
-
 
 .overskrift2{
     font-size: 2.5rem;
@@ -217,39 +220,34 @@ p {
 
 .smartphones{
     font-size: 2.5rem;
-    font-weight: bold;    
-}
-
-.underoverskrift{
-    font-weight: bold;
+    font-weight: bold;  
+    padding-top: 3.5rem;  
 }
 
 
-/* Grid for topical siden */ 
+
+/* Grid for topical siden -- skal dette vekk??*/ 
 .grid-container{
     display: grid;
     grid-template-columns: minmax(500px, 40vw), minmax(300px, 20vw), auto;
     grid-template-rows: minmax(100px, auto);
 }
 
-.introtekst{
-    flex-direction: row;
-}
-
 .terms{
     font-style: oblique;
+    padding-top: 2.5rem;
 }
 
 
 
 h2 {
     font-size: 2rem;
-    padding-top: 0.8rem;
+    padding-top: 1.5rem;
 }
 
 p {
     font-size: 1.3rem;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
 
 }
 
