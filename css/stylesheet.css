@@ -10,7 +10,7 @@ body {
 }
 
 /*navigation bar in header*/
-nav {
+nav{
     display: flex;
     justify-content: space-between;
     background-color: #f1f8fc;
@@ -36,9 +36,9 @@ nav {
 
 .button > a:hover{
     border: 1px solid #000064;
-    background-color: #000064;
+    background-color: white;
     border-radius: 10%;
-    color:#fff;
+    color: black;
 }
 
 .button {
@@ -176,6 +176,8 @@ p {
 
 
 
+
+
 /*         css til topical page         */
 
 .topical {
@@ -183,21 +185,6 @@ p {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
     font-weight: 500;
-}
-
-.menuicon > div{
-  width: 40px;
-  height: 7px;
-  background-color: black;
-  margin: 4px 0;
-}
-
-.top {
-    background-color: rgb(194, 194, 183);
-    margin-left: -3rem;
-    margin-right: -3rem;
-    padding-top: 0rem;
-    font-size: 3rem;
 }
 
 .overskrift {
@@ -208,14 +195,16 @@ p {
     font-weight: 900;
 }
 
-
-.flex-container{
-    display: flex;
+.overskrift1{
+    font-size: 3rem;
+}
+.overskrift2{
+    font-size: 2.5rem;
 }
 
 
-.overskrift2{
-    font-size: 2.5rem;
+.flex-container{
+    display: flex;
 }
 
 .smartphones{
@@ -224,14 +213,6 @@ p {
     padding-top: 3.5rem;  
 }
 
-
-
-/* Grid for topical siden -- skal dette vekk??*/ 
-.grid-container{
-    display: grid;
-    grid-template-columns: minmax(500px, 40vw), minmax(300px, 20vw), auto;
-    grid-template-rows: minmax(100px, auto);
-}
 
 .terms{
     font-style: oblique;
@@ -265,7 +246,7 @@ p {
     padding-bottom: 4rem;
 }
 
-.bottom{
+.topicalnav, .bottom{
         padding: 0.5rem 0;
         background-color: rgb(194, 194, 183);
         margin-left: -3rem;
