@@ -208,20 +208,16 @@ nav{
 }
 
 
-.topicalflex-container{
+.topicalflex-container, .termsflex-container{
     display: flex;
 }
 
 
-
-.topicalflex-container > div{
+.topicalflex-container, .termsflex-container > div{
     margin: 10px;
     padding: 40px;
 }
 
-.video {
-    object-fit: fill;
-}
 
 .overskrift1{
     font-size: 3rem;
@@ -272,6 +268,11 @@ p {
 
 .impact{
     padding-bottom: 4rem;
+}
+
+.midtdel{
+    margin: 45px;
+    
 }
 
 .topicalnav, .bottom{
