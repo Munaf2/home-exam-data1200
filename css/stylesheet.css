@@ -42,7 +42,7 @@ nav{
     background-color: white;
     border-radius: 10%;
     color: black;
-    text-decoration: underline;
+    
 }
 
 
@@ -59,6 +59,8 @@ nav{
     height: 100%;
 }
 
+
+/*Index siden */
 .content {
     display: grid;
     max-width: 100%;
@@ -112,29 +114,26 @@ nav{
 /*FOOTER*/
 .footer {
     border-top: 1px solid #eee;
-    padding: 2rem 0;
+    padding: 1rem 0;
     background-color: #4989CA;
 }
 
 .container-footer {
-    display: grid;
-    grid-template-columns: 0.5fr 0.5fr;
-    gap: 20px;
-    /* her velger vi mellomrom mellom de to kolonnene */
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 30px;
-
 }
 
 /*Dette er logo kolonnen (den venstre kolonnnen)*/
 .logo-kolonne {
     display: flex;
     flex-direction: column;
-    padding-left: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .logo-footer {
     margin-bottom: 1rem;
-    margin-top: 1rem;
 }
 
 .sosiale-medier {
@@ -159,8 +158,8 @@ nav{
 .adresse-kolonne{
     display: flex;
     flex-direction: column;
-    text-align: right;
-    padding-right: 5rem;
+    text-align: center;
+    padding-right: 70px;
     
 }
 
@@ -261,12 +260,13 @@ nav{
     font-weight: 900;
 }
 
+
 h2 {
     font-size: 2rem;
     padding-top: 1.5rem;
 }
 
-p {
+.terms-p,.smarthphonesusage-p,.fails-p,.complies-p,.impact-p,.european-p {
     font-size: 1.3rem;
     padding-top: 1.5rem;
 }
