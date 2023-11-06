@@ -275,6 +275,11 @@ a:hover{
     color: blue; 
 }
 
+.kart{
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
 .topicalnav, .bottom{
         padding: 0.5rem 0;
         background-color: rgb(194, 194, 183);
