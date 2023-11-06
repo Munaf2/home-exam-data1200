@@ -80,6 +80,8 @@ nav{
     padding:10%;
     background-color: #FFDC00;
     box-sizing: content-box;
+    max-width: 100%;
+    height: auto;
 }
 
 .index-images {
