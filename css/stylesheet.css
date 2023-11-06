@@ -159,13 +159,14 @@ nav{
     display: flex;
     flex-direction: column;
     padding-left: 90px;
+    text-align: right;
     
 }
 
 .copyright {
-    margin-top: 90px;
     font-size: 20px;
     padding-left: 80px;
+    text-align: center;
 }
 
 
