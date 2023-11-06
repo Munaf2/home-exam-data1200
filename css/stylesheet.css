@@ -4,17 +4,13 @@
     box-sizing: border-box;
 }
 
-body {
-
-    background-color: #ffffff;
-}
 
 /*navigation bar in header*/
 nav{
     display: flex;
     justify-content: space-between;
-    background-color: #FF8100;
     padding: 1rem;
+    background-color: #4989CA;
 }
 
 .navigations {
@@ -78,7 +74,7 @@ nav{
     grid-column-start: 4;
     grid-column-end: 7;
     padding:10%;
-    background-color: #FFDC00;
+    background-color: #D7EAFD;
     box-sizing: content-box;
     max-width: 100%;
     height: auto;
@@ -107,13 +103,17 @@ nav{
 }
 
 
-
+/* KART */
+.kart{
+    text-align: center;
+    padding-bottom: 4rem;
+}
 
 /*FOOTER*/
 .footer {
     border-top: 1px solid #eee;
     padding: 2rem 0;
-    background-color: #f1f8fc;
+    background-color: #4989CA;
 }
 
 .container-footer {
@@ -253,9 +253,15 @@ p {
     font-style: normal;
 }
 
-.bilder {
-    border-radius: 8px;
-    padding-top: 1rem;
+.førstebilde{
+    padding-left: 7rem;
+    padding-top: 4rem;
+
+}
+
+.bilde2{
+padding-top: 6rem;
+
 }
 
 .impact{
@@ -273,11 +279,6 @@ a:link{
 
 a:hover{
     color: blue; 
-}
-
-.kart{
-    text-align: center;
-    padding-bottom: 4rem;
 }
 
 .topicalnav, .bottom{
