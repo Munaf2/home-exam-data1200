@@ -221,6 +221,17 @@ nav{
     font-weight: 900;
 }
 
+.fixedpositionnav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.topicalmain{
+  padding-top: 14rem;
+}
+
+
 .overskrift1{
     font-size: 3rem;
 }
