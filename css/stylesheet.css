@@ -43,7 +43,7 @@ nav{
 }
 
 .button > a:hover{
-    background-color: #FFD2A5;
+    background-color: white;
     border-radius: 10%;
     color: black;
     text-decoration: underline;
