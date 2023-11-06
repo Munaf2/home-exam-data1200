@@ -9,6 +9,7 @@
     <!--Lenke til fontawsome for å bruke sosial medier ikoner-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body class="topical">
     <header>
         <nav class="topicalnav">
@@ -18,25 +19,27 @@
             </div>
 
             <ul class="navigations">
-                    <li class="button"><a href="./index.html">Home</a></li>
-                    <li class="button"><a href="./accessibility.html">Accessibility</a></li>
-                    <li class="button"><a href="./topical.html">Topical page</a></li>
-                    <li class="button"><a href="./campus.html">Our campus</a></li>
-                </ul>
+                <li class="button"><a href="./index.html">Home</a></li>
+                <li class="button"><a href="./accessibility.html">Accessibility</a></li>
+                <li class="button"><a href="./topical.html">Topical page</a></li>
+                <li class="button"><a href="./campus.html">Our campus</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
         <section class="video">
-            <video src="./images/video (360p).mp4"></video>
+            <video src="./images/video (360p).mp4" muted loop autoplay></video>
         </section>
-        
-        <!-- Flex for å ha terms og introteksten side om side -->
+
+        <p class="smartphones"> Smartphones</p>
+
+        <!-- Flexbox for å ha terms og introteksten side om side -->
         <section>
-            <div class="flex-container">
+            <div class="topicalflex-container">
                 <div class="introtekst">
 
-                    <p class="smartphones"> Smartphones</p>
+                    <p class="european"> European Accessibility Act</p>
 
                     <p>
                         Norwegian government chooses to implement the European Accessibility Act
@@ -45,46 +48,50 @@
                         basic principles of universal design.
                         To what degree smartphones fulfills the principles of universal design
                     </p>
+                </div>
 
-                    <div class="førstebilde">
+                <div class="førstebilde">
                     <!-- Foto: fra nettiden Medium.com artikkelnavn: "The evolution of mobile devices" (forfatter ikke oppgitt på)
                     Link: https://medium.com/@s92063042/history-and-evolution-of-smartphones-17987e6f91d1 -->
-                        <figure class="bilder">
-                            <img src="/images/smartphones.jpeg" alt="Evolution of the Mobile Phone">
-                            <figcaption class="caption">Mobile phone evolution</figcaption>
-                        </figure>
-                    </div>
-                </div>
-
-
-
-                <div class="terms">
-                    <h2>
-                        Key terms
-                    </h2>
-                    <p>
-                        Universal design is based on creating products that ensure
-                        accessibility and usability for all people no matter their
-                        situation or state.</p>
-                    <p>
-                        Participatory processes is method that ensure that all people
-                        involved in a decision has a say in it so that everyone is
-                        represented when deciding how to develop something. </p>
-                    <p>
-                        Simple and Intuitive Use: The design should be easy to understand,
-                        regardless of the user's experience, knowledge, language skills,
-                        or current concentration level. </p>
-
-                    <!-- Foto: S92063042 fra nettiden techpoint.africa 
-                    Artikkelnavn: Evolution of mobile phones in Nigeria: How competition made expensive phones cheap
-                    Link: https://techpoint.africa/2020/02/28/mobile-phones-evolution-nigeria/ -->
-                    <figure class="bilde1">
-                        <img src="./images/phones.jpeg" alt="Smartphones and mobile phones" />
-                        <figcaption class="caption">Smartphones and phones</figcaption>
+                    <figure class="bilder">
+                        <img src="/images/smartphones.jpeg" alt="Evolution of the Mobile Phone">
+                        <figcaption class="caption">Mobile phone evolution</figcaption>
                     </figure>
                 </div>
+            </div>
         </section>
-        
+
+
+        <section>
+
+            <div class="terms">
+                <h2>
+                    Key terms
+                </h2>
+                <p>
+                    Universal design is based on creating products that ensure
+                    accessibility and usability for all people no matter their
+                    situation or state.</p>
+                <p>
+                    Participatory processes is method that ensure that all people
+                    involved in a decision has a say in it so that everyone is
+                    represented when deciding how to develop something. </p>
+                <p>
+                    Simple and Intuitive Use: The design should be easy to understand,
+                    regardless of the user's experience, knowledge, language skills,
+                    or current concentration level. </p>
+
+                <!-- Foto: S92063042 fra nettiden techpoint.africa 
+        Artikkelnavn: Evolution of mobile phones in Nigeria: How competition made expensive phones cheap
+        Link: https://techpoint.africa/2020/02/28/mobile-phones-evolution-nigeria/ -->
+                <figure class="bilde1">
+                    <img src="./images/phones.jpeg" alt="Smartphones and mobile phones" />
+                    <figcaption class="caption">Smartphones and phones</figcaption>
+                </figure>
+            </div>
+        </section>
+
+
         <div class="smarthphonesusage">
             <h2>
                 The current usage of smartphones in everyday life
@@ -141,7 +148,7 @@
             </p>
         </div>
 
-         <div class="impact">
+        <div class="impact">
             <h2>
                 What is the potential impact of a strict enforcement of universal
                 design on all digital products?
@@ -163,8 +170,8 @@
         </div>
     </main>
 
-    
-    
+
+
     <!--FOOTER-->
     <footer class="bottom">
         <div class="container-footer">
