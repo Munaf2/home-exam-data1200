@@ -154,10 +154,24 @@ nav{
 }
 
 /**Dette er kontakt oss kolonnen (venstre kolonne**/
+
+.adresse-kolonne{
+    display: flex;
+    flex-direction: column;
+    padding-left:800px;
+    
+   
+}
+
+
+/**
 .copyright {
-    margin-top: 20px;
+    margin-top: 90px;
     font-size: 20px;
 }
+**/
+
+
 
 .adresse-tittel {
     font-size: 25px;
