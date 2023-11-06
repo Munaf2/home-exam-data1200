@@ -222,7 +222,7 @@ nav{
 
 
 .topicalflex-container, .termsflex-container > div{
-    margin: px;
+    margin: 10px;
     padding: 40px;
 }
 
@@ -236,10 +236,6 @@ nav{
 
 .european{
     font-weight: 900;
-}
-
-.terms{
-    padding-top: 2.5rem;
 }
 
 h2 {
@@ -269,7 +265,14 @@ p {
 .midtdel{
     margin: 45px;
     text-align: left;
-    
+}
+
+a:link{
+    color: black;
+}
+
+a:hover{
+    color: blue; 
 }
 
 .topicalnav, .bottom{
