@@ -158,7 +158,8 @@ nav{
 .adresse-kolonne{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: right;
+    padding-right: 5rem;
     
 }
 
