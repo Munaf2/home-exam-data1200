@@ -158,19 +158,15 @@ nav{
 .adresse-kolonne{
     display: flex;
     flex-direction: column;
-    padding-left:800px;
+    padding-left: 90px;
     
-   
 }
 
-
-/**
 .copyright {
     margin-top: 90px;
     font-size: 20px;
+    padding-left: 80px;
 }
-**/
-
 
 
 .adresse-tittel {
