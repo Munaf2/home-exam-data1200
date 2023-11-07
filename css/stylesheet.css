@@ -112,11 +112,12 @@ nav{
 }
 
 /*FOOTER*/
-.footer {
+.footer{
     border-top: 1px solid #eee;
     padding: 1rem 0;
     background-color: #4989CA;
 }
+
 
 .container-footer {
     display: flex;
@@ -309,6 +310,19 @@ a:hover{
         background-color: rgb(194, 194, 183);
         margin-left: -3rem;
         margin-right: -3rem;
+}
+
+.sosiale-medier-topical{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 20px;
+}
+
+.footer-topical{
+    border-top: 1px solid #eee;
+    padding: 1rem 0;
+    background-color:rgb(194, 194, 183);
 }
 
 
