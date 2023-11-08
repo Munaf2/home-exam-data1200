@@ -446,7 +446,6 @@ ul li {
 }
 
 
-
 .topicalmain{
   padding-top: 14rem;
 }
@@ -463,7 +462,7 @@ ul li {
     display: flex;
 }
 
-.topicalflex-container, .termsflex-container > div{
+.europeanflex-container, .termsflex-container > div{
     margin: 10px;
     padding: 50px;
     
@@ -501,7 +500,7 @@ h2 {
 
 }
 
-.bilder1, .bilde2{
+.bilde1, .bilde2{
 padding-top: 6rem;
 
 }
