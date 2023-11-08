@@ -14,13 +14,13 @@ nav{
 }
 
 .main-header{
+    position: fixed;
     display:flex;
     justify-content:space-between;
-    border-bottom:1px solid #D4D4D4;
     padding: 10px;
-    position: fixed;
     background-color: #4989CA;
     width: 100%;
+    top:0;
 }
 
 /*navigation bar in header*/
