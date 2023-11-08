@@ -192,13 +192,79 @@ nav{
     color: #ddc7c7;
 }
 
-
-
-
-
-
-
-
+/* css til campus siden */
+.image-container {
+    max-width: 100%;
+  }
+  
+  .campus-overskrift {
+      font-size: 2.5rem;
+      text-align: left;
+      color: black;
+      padding-left: 25px;
+      padding-top: 28px;
+      font-family: sans-serif;
+      font-weight: 600;
+  }
+    
+    .campus-undertittel {
+      font-size: 1.1rem;
+      color: black;
+      text-align: left;
+      padding-left: 10px;
+      padding-top: 8px;
+      font-family: sans-serif;
+      margin: 20px;
+      font-weight: 400;
+  }
+  .campus-container {
+      display: grid;
+      grid-template-columns: 50% 50%; /*Make the grid smaller than the container*/
+      grid-template-rows: 50% 50%;
+  }
+  
+  .studiesal-container {
+      display: grid;
+      grid-template-columns: 50% 50%; /*Make the grid smaller than the container*/
+      grid-template-rows: 50% 50%;
+      gap: 50px;
+  }
+      
+  .campus-fasiliter {
+      margin: 0;
+      padding-top: 10px;
+      padding-left: 100px;
+      text-align: left;
+      font-family: sans-serif;
+  }
+  ul li {
+      margin: 10px;
+    }
+  
+  .oversiktstittel {
+      text-align: center;
+      padding-left: 110px;
+      padding-top: 40px;
+      padding-bottom: 20px;
+      font-weight: 600;
+      font-family: sans-serif;
+  }
+  .oversiktsparagraf {
+      margin-left: 110px;
+      margin-right: 110px;
+      padding-top: 25px;
+      padding-bottom: 70px;
+      font-size: large;
+  }
+  .campus-oversikt {
+      text-align: left;
+      font-family: sans-serif;
+      padding-top: 70px;
+  }
+  
+  h3 {
+      padding-left: 130px;
+  }  
 
 
 /*         css til topical page         */
