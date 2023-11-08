@@ -303,6 +303,7 @@ nav{
     grid-template-rows: 50% 50%;
     padding: 60px;
     border: 6rem;
+    max-width: 100%;
 }
 
 .image-container {
@@ -367,14 +368,15 @@ nav{
 .stillerom-oversikt {
     text-align: left;
     font-family: sans-serif;
-    margin: 30px;
+    margin: 20px;
 }
 
 .studiesal-oversikt {
     text-align: left;
     font-family: sans-serif;
     padding-right: 120px;
-    margin: 30px;
+    padding-top: 20px;
+    margin: 20px;
 }
 
 .campus-fasiliter {
@@ -394,6 +396,12 @@ ul li {
     padding-left: 40px;
     padding-top: 40px;
 }  
+
+.studiesal-overskrift {
+    padding-left: 30px;
+    padding-top: 5px;
+} 
+
 
 
 /*         css til topical page         */
