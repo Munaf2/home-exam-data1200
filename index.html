@@ -17,36 +17,71 @@
 </head>
 
 <body>
-    <header>
+    <div class="main-header">
+        <picture class="nav-logo">
+            <img src="./images/svart_logo_oslomet.png" alt="oslomet logo svart"/>
+        </picture>
         <nav>
-            <div class="logo">
-                <img src="./images/svart_logo_oslomet.png" alt="Oslomet logo" />
-            </div>
             <ul class="navigations">
-                <li class="button"><a href="./">Home</a></li>
-                <li class="button"><a href="./campus.html">Our campus</a></li>
-                <li class="button"><a href="./topical.html">Topical page</a></li>
-                <li class="button"><a href="./accessibility.html">Accessibility</a></li>
+                    <li class="nav-buttons"><a href="./index.html">Home</a></li>
+                    <li class="nav-buttons dropmenu">
+                        <a href="javascript:void(0)" class="dropbtn">Menu</a>
+                        <div class="dropmenu-content">
+                            <a href="./accessibility">Accessibility</a>
+                            <a href="./topical.html">Topical page</a>
+                            <a href="./campus.html">Our campus</a>
+                          </div>
+                    </li>
             </ul>
         </nav>
-    </header>
+    </div>
 
-    <div class="content">
-        <img class="index-images" src="./images/P35-2400-1200.jpeg"
-            alt="OsloMet campus . av Mina K. Abrahamsen / OsloMet">
-        <div class="introduction">
-            <h1>Velkommen til Oslomet</h1>
-            <p class="avsnitt1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor consequat id porta nibh venenatis
-                cras.
-                Tempus urna et pharetra pharetra massa massa ultricies. Vestibulum morbi blandit cursus risus at
-                ultrices mi tempus.
-                Tincidunt eget nullam non nisi est sit amet facilisis. Neque laoreet suspendisse interdum consectetur.
-            </p>
+    <div class="main-content">
+        <picture class="index-image">
+            <img src="./images/P35-2400-1200.jpeg" class="cover-it"/>
+        </picture>
+        <div class="introductions">
+            <h1>DATA1200 Inclusive Web Design</h1>
+            <div class="introductions-content">
+                
+                <h2>Group exam</h2>
+                <p>Exam text..Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
         </div>
-        <div class="news-articles">
-            <h1>Nyheter</h1>
+        <div class="headings">
+            <h2>Articles</h2>
         </div>
+        
+        <div class="news-tabs">
+            <div class="articles">
+                <div class="articles-picture">
+                <img src="./images/CampusSommer-26.jpg" alt="campus 4" class="cover-it">
+                </div>
+                <div class="articles-content">
+                    <a href=""><h3>Accessiblity across the page</h3></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="articles">
+                <div class="articles-picture" alt="campus 1">
+                <img src="./images/CampusSommer-12.jpg">
+                </div>
+                <div class="articles-content" alt="campus 2">
+                <a href=""><h3>The Oslomet Campus</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                </div>
+            </div>
+            <div class="articles">
+                <div class="articles-picture" alt="campus 3">
+                <img src="./images/CampusSommer-61.jpg">
+                </div>
+                <div class="articles-content">
+                    <a href="#"><h3>Topical page title</h3></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+            </div>
+        </div>
+    
     </div>
 
     <!-- Kart Oslomet -->
@@ -63,7 +98,7 @@
         <div class="container-footer">
             <div class="logo-kolonne">
                 <a href="#" class="logo-footer">
-                    <img class="logo" alt="OsloMet logo" src="images/logo_oslomet_gul.png">
+                    <img class="nav-logo" alt="OsloMet logo" src="images/logo_oslomet_gul.png">
                 </a>
 
                 <ui class="sosiale-medier">
