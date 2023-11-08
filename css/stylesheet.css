@@ -464,8 +464,11 @@ ul li {
 
 .europeanflex-container, .termsflex-container > div{
     margin: 10px;
-    padding: 40px;
-    
+    padding-left: 2rem;
+    padding-right: 9rem;
+    padding-bottom: 3rem;
+    border: red;
+
 }
 
 .smartphones{
