@@ -294,11 +294,20 @@ h3 {
     font-weight: 900;
 }
 
-.fixedpositionnav{
+.topicalnav{
     position: fixed;
     top: 0;
     width: 100%;
     padding-right: 5rem;
+}
+
+.navigations-topical{
+    display: flex;
+    justify-content: flex-end;
+    /* moves nav buttons to the left*/
+    list-style: none;
+    padding-top:30px;
+
 }
 
 .topicalmain{
