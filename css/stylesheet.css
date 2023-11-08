@@ -211,9 +211,11 @@ nav{
 }
 
 /* KART */
-.kart{
+.overskriftkart{
     text-align: center;
-    padding-bottom: 4rem;
+}
+.kart{
+    padding: 3rem;
 }
 
 /*FOOTER*/
@@ -294,6 +296,8 @@ nav{
 .footer-link:active {
     color: #ddc7c7;
 }
+
+
 
 /* css til campus siden */
 
@@ -471,25 +475,27 @@ ul li {
 
 }
 
-.smartphones{
+.topicalsmartphones {
     font-size: 2.5rem;
     font-weight: bold;  
     padding-top: 3.5rem;  
     text-align: center;
 }
 
-.european{
-    font-weight: 900;
-}
+
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding-top: 1.5rem;
 }
 
 .topical-p{
     font-size: 1.3rem;
     padding-top: 1.5rem;
+}
+
+.introtekst{
+    padding-right: 15rem;
 }
 
 .caption {
