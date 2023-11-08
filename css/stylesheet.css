@@ -301,6 +301,7 @@ h3 {
     padding-right: 5rem;
 }
 
+<<<<<<< Updated upstream
 .navigations-topical{
     display: flex;
     justify-content: flex-end;
@@ -308,7 +309,13 @@ h3 {
     list-style: none;
     padding-top:30px;
 
+=======
+/*  Er dette riktig? */ 
+.video{
+    pos
+>>>>>>> Stashed changes
 }
+
 
 .topicalmain{
   padding-top: 14rem;
@@ -380,6 +387,11 @@ padding-top: 6rem;
 .midtdel{
     margin: 45px;
     text-align: left;
+}
+
+.topical-p{
+    font-size: 20px;
+    padding-top: 25px;
 }
 
 a:link{
