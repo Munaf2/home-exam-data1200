@@ -9,6 +9,10 @@ img{
     height: auto;
 }
 
+nav{
+    padding:10px;
+}
+
 .main-header{
     display:flex;
     justify-content:space-between;
@@ -20,7 +24,7 @@ img{
 }
 
 /*navigation bar in header*/
-nav{
+.index-nav{
     display:flex;
     justify-content: flex-end;
 }
@@ -421,6 +425,8 @@ ul li {
     top: 0;
     width: 100%;
     padding-right: 5rem;
+    display:flex;
+    justify-content: space-between;
 }
 
 .navigations-topical{
@@ -486,7 +492,7 @@ h2 {
 
 }
 
-.bilde2{
+.bilde1, .bilde2{
 padding-top: 6rem;
 
 }
@@ -513,6 +519,31 @@ a:hover{
         background-color: rgb(194, 194, 183);
         margin-left: -3rem;
         margin-right: -3rem;
+}
+
+.topical-buttons {
+    /*navigation buttons*/
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+    margin-top:2rem;
+}
+
+.topical-buttons > a {
+    font-family: 'Nunito', sans-serif; /*navigation font, else it is arial */
+    font-size: 1.3rem;
+    font-weight: 900;
+    font-variant: all-small-caps;
+    /*font in uppercase*/
+    color: black;
+    text-decoration: none;
+    padding:0.5em 1em;
+}
+
+.topical-buttons > a:hover{
+    background-color: white;
+    border-radius: 10%;
+    color: black;
+    
 }
 
 .sosiale-medier-topical{
