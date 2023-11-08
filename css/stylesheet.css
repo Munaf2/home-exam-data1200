@@ -33,9 +33,6 @@ nav{
     display:flex;
     justify-content: flex-end;
     list-style-type: none;
-    overflow: hidden;
-    margin-top: 10px;
-    margin-right:10px;
 }
 
 .nav-buttons a, .dropbtn{
@@ -43,15 +40,18 @@ nav{
     border:none;
     color:black;
     font-variant-caps: all-small-caps;
-    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
     font-weight: 900;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 15px;
     text-decoration: none;
 }
 
 .nav-buttons a:hover, .dropmenu:hover .dropbtn{
-    background-color: #FF8100;
+    background-color: #9fc8d8;
+    color:#312e2e;
+    text-decoration: underline;
 }
 
 .nav-buttons.dropmenu{
@@ -89,7 +89,7 @@ nav{
     text-align: left;
   }
   
-.dropmenu-content a:hover {background-color: #FF8100;}
+.dropmenu-content a:hover {background-color: #9fc8d8;}
   
 .dropmenu:hover .dropmenu-content {
     display: flex;
@@ -105,7 +105,7 @@ nav{
     justify-content: center;
     align-items: center;
     background-color: #F1F1F1;
-    padding-top:10px;
+    padding-top:100px;
 }
 
 .main-content > h2{
