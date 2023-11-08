@@ -258,9 +258,18 @@ nav{
 .stillerom-oversikt {
     text-align: left;
     font-family: sans-serif;
-}
-.campus-fasiliter {
     margin: 30px;
+}
+
+.studiesal-oversikt {
+    text-align: left;
+    font-family: sans-serif;
+    padding-right: 120px;
+    margin: 30px;
+}
+
+.campus-fasiliter {
+    margin: 0px;
     padding-top: 5px;
     padding-left: 1px;
     text-align: left;
@@ -272,10 +281,15 @@ ul li {
 }
 
   
-.stillerom-overskirft {
+.stillerom-overskrift {
     padding-left: 40px;
     padding-top: 40px;
 }  
+
+.studiesal-overskrift {
+    padding-left: 30px;
+    padding-top: 5px;
+} 
 
 /*         css til topical page         */
 
