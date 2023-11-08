@@ -458,13 +458,13 @@ ul li {
     font-size: 2.5rem;
 }
 
-.topicalflex-container, .termsflex-container{
+.europeanflex-container, .termsflex-container{
     display: flex;
 }
 
 .europeanflex-container, .termsflex-container > div{
     margin: 10px;
-    padding: 50px;
+    padding: 40px;
     
 }
 
@@ -494,12 +494,11 @@ h2 {
     font-style: normal;
 }
 
-.førstebilde{
+.bilde1{
     padding-left: 7rem;
     padding-top: 4rem;
 
 }
-
 .bilde1, .bilde2{
 padding-top: 6rem;
 
