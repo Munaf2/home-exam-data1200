@@ -449,7 +449,6 @@ ul li {
     padding-top:30px;
 }
 
-
 .topicalmain{
   padding-top: 14rem;
 }
@@ -482,8 +481,6 @@ ul li {
     text-align: center;
 }
 
-
-
 h2 {
     font-size: 1.7rem;
     padding-top: 1.5rem;
@@ -503,14 +500,8 @@ h2 {
     font-style: normal;
 }
 
-.bilde1{
-    padding-left: 7rem;
-    padding-top: 4rem;
-
-}
 .bilde1, .bilde2{
 padding-top: 6rem;
-
 }
 
 .impact{
@@ -573,4 +564,7 @@ a:hover{
     border-top: 1px solid #eee;
     padding: 1rem 0;
     background-color:rgb(194, 194, 183);
+    margin-left: -2.5rem;
+    margin-right: -2.5rem;
+
 }
