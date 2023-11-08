@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 /*navigation bar in header*/
 nav{
     display: flex;
@@ -45,7 +44,6 @@ nav{
     
 }
 
-
 .logo {
     /*logo*/
     width: 80px;
@@ -59,49 +57,41 @@ nav{
     height: 100%;
 }
 
-.cover-it{
-    object-fit: cover;
-}
-
-/*Index page styling */
-.main-content {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #F1F1F1;
-    padding-top:10px;
-}
-
-.main-content > h2{
-    padding:20px;
-}
-
-.index-image{
-    width:75%;
-}
-
-.introductions {
-    flex:1;
-    width: 75%;
-    border: 1px solid #D4D4D4;
-    border-top:none;
+/*Index siden */
+.content {
+    display: grid;
+    max-width: 100%;
+    margin: 0 auto;
+    /* horizontally centers the container */
+    grid-template-columns: repeat(6, 1fr);
+    /*divide container into 6 equal fractions*/
+    grid-template-rows: repeat(2, 1fr);
     background-color: white;
 }
 
-.introductions-content{
-    padding:20px;
+.introduction {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    padding:10%;
+    background-color: #D7EAFD;
+    box-sizing: content-box;
+    max-width: 100%;
+    height: auto;
 }
 
-.introductions h1{
-    background-color: #FF8100;
-    padding: 10px 20px;
+.index-images {
+    box-sizing: content-box;
+    max-width: 100%;
+    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 .news-articles{
-    flex:1;
-    width: 75%;
-    padding-top:20px;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row: 2;
+    padding:10%;
 }
 
 .avsnitt1,
@@ -110,64 +100,6 @@ nav{
     line-height: 1.5;
     /*Linke avstand*/
 }
-
-/* stylings på artikler forslag */
-
-.news-tabs{
-    display:flex;
-    border-top: 1px solid #d4d4d4;
-    background-color: white;
-}
-
-@media(max-width:480px){
-    .news-tabs{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-.articles{
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(6,1fr);
-    gap:10px;
-    margin-bottom:20px;
-    margin-top:20px;
-}
-
-.articles-picture{
-    grid-column-start:1;
-    grid-column-end:9;
-    grid-row-start: 1;
-    grid-row-end: 7;
-
-}
-
-.articles-content{
-    grid-column-start:2;
-    grid-column-end:8;
-    grid-row-start: 2;
-    grid-row-end: 6;
-    background-color: white;
-    opacity: 80%;
-    align-content: center;
-    padding:10px;
-}
-
-.articles a{
-    text-decoration: none;
-    color:black;
-}
-
-.articles h3{
-    padding:10px;
-}
-
-.articles a:hover{
-    text-decoration: underline;
-    color:#000064;
-}
-
 
 /* KART */
 .kart{
@@ -181,7 +113,6 @@ nav{
     padding: 1rem 0;
     background-color: #4989CA;
 }
-
 
 .container-footer {
     display: flex;
@@ -233,7 +164,6 @@ nav{
     text-align: center;
 }
 
-
 .adresse-tittel {
     font-size: 25px;
     font-weight: bold;
@@ -256,7 +186,6 @@ nav{
     color: #ddc7c7;
 }
 
-
 /* css til campus siden */
 
 .campus-container {
@@ -264,6 +193,7 @@ nav{
     grid-template-columns: 50% 50%; /*Make the grid smaller than the container*/
     grid-template-rows: 50% 50%;
     padding: 60px;
+    border: 6rem;
 }
 
 .image-container {
@@ -347,7 +277,6 @@ h3 {
     padding-top: 40px;
 }  
 
-
 /*         css til topical page         */
 
 .topical {
@@ -365,27 +294,16 @@ h3 {
     font-weight: 900;
 }
 
-.topicalnav{
+.fixedpositionnav{
     position: fixed;
     top: 0;
     width: 100%;
     padding-right: 5rem;
 }
 
-.navigations-topical{
-    display: flex;
-    justify-content: flex-end;
-    /* moves nav buttons to the left*/
-    list-style: none;
-    padding-top:30px;
-
-}
-
-
 .topicalmain{
   padding-top: 14rem;
 }
-
 
 .overskrift1{
     font-size: 3rem;
@@ -395,17 +313,14 @@ h3 {
     font-size: 2.5rem;
 }
 
-
 .topicalflex-container, .termsflex-container{
     display: flex;
 }
-
 
 .topicalflex-container, .termsflex-container > div{
     margin: 10px;
     padding: 40px;
 }
-
 
 .smartphones{
     font-size: 2.5rem;
@@ -417,7 +332,6 @@ h3 {
 .european{
     font-weight: 900;
 }
-
 
 h2 {
     font-size: 2rem;
@@ -454,11 +368,6 @@ padding-top: 6rem;
     text-align: left;
 }
 
-.topical-p{
-    font-size: 20px;
-    padding-top: 25px;
-}
-
 a:link{
     color: black;
 }
@@ -486,6 +395,3 @@ a:hover{
     padding: 1rem 0;
     background-color:rgb(194, 194, 183);
 }
-
-
-
