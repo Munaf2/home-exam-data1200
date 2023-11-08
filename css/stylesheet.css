@@ -301,6 +301,10 @@ h3 {
     padding-right: 5rem;
 }
 
+.video{
+    max-width: 100%;
+}
+
 .topicalmain{
   padding-top: 14rem;
 }
@@ -399,6 +403,7 @@ a:hover{
     border-top: 1px solid #eee;
     padding: 1rem 0;
     background-color:rgb(194, 194, 183);
+    padding-bottom: 3px;
 }
 
 
