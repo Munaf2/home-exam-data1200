@@ -17,19 +17,23 @@
 </head>
 
 <body>
-    <header>
+    <div class="index-header">
+        <div class="nav-logo">
+            <img src="./images/svart_logo_oslomet.png" alt="Oslomet logo i svart" />
+        </div>
         <nav>
-            <div class="logo">
-                <img src="./images/svart_logo_oslomet.png" alt="Oslomet logo" />
-            </div>
             <ul class="navigations">
-                <li class="button"><a href="./">Home</a></li>
-                <li class="button"><a href="./campus.html">Our campus</a></li>
-                <li class="button"><a href="./topical.html">Topical page</a></li>
-                <li class="button"><a href="./accessibility.html">Accessibility</a></li>
+                <li class="nav-buttons"><a href="./">Home</a></li>
+                <li class="nav-buttons dropmenu"><a href="javascript:void(0)" class="dropbtn">Menu</a>
+                    <div class="dropmenu-content">
+                    <a href="./topical.html">Topical page</a>
+                    <a href="./accessibility.html">Accessibility</a>
+                    <a href="./campus.html">Our campus</a>
+                    </div>
+                </li>
             </ul>
         </nav>
-    </header>
+    </div>
 
     <div class="content">
         <img class="index-images" src="./images/P35-2400-1200.jpeg"
@@ -63,7 +67,7 @@
         <div class="container-footer">
             <div class="logo-kolonne">
                 <a href="#" class="logo-footer">
-                    <img class="logo" alt="OsloMet logo" src="images/logo_oslomet_gul.png">
+                    <img class="nav-logo" alt="OsloMet logo" src="images/logo_oslomet_gul.png">
                 </a>
 
                 <ui class="sosiale-medier">
