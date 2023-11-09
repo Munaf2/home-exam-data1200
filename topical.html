@@ -10,39 +10,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
+<!-- Todelt nav. På høyre siden er det navnet på siden-->
 <body class="topical">
     <header>
-            <nav class="topicalnav">
-                <div class="overskrift">
-                    <h1 class="overskrift1">UNIVERSAL </h1>
-                    <h1 class="overskrift2"> DESIGN</h1>
-                </div>
+        <nav class="topicalnav">
+            <div class="overskrift">
+                <h1 class="overskrift1">UNIVERSAL </h1>
+                <h1 class="overskrift2"> DESIGN</h1>
+            </div>
 
-                <div>
-                <ul class="navigations-topical">
+            <!-- Todelt nav. På venstre side er det link til de andre sidene. -->
+            <div>
+                <ul class="navlist-topical">
                     <li class="topical-buttons"><a href="./index.html">Home</a></li>
                     <li class="topical-buttons"><a href="./campus.html">Our campus</a></li>
                     <li class="topical-buttons"><a href="./topical.html">Topical page</a></li>
                     <li class="topical-buttons"><a href="./accessibility.html">Accessibility</a></li>
                 </ul>
-                </div>
-      
+            </div>
+
         </nav>
     </header>
 
+    <!-- Video fra pexels.com. Video av Fauxels. Link til siden: https://www.pexels.com/nb-no/video/3251809/. 
+    Bruker <video> for at banneret med lyd og muligheten til å ta videoen foran osv. ikke kommer med. -->
     <main class="topicalmain">
-        <section class="video">
+        <section class="videotopical">
             <video src="./images/video (540p) (1).mp4" muted loop autoplay></video>
         </section>
 
-
         <h2 class="topicalsmartphones"> Smartphones</h2>
 
-        <!-- Flexbox for å ha terms og introteksten side om side -->
+        <!-- Flexbox for å ha bilde og intro tekst side om side -->
         <section>
             <div class="europeanflex-container">
                 <div class="introtekst">
-                    <h2 class="european"> European Accessibility Act</h2> 
+                    <h2 class="european"> European Accessibility Act</h2>
                     <p class="topical-p">
                         Norwegian government chooses to implement the European Accessibility Act
                         into Norwegian law and is prepared to issue large fines for digital services,
@@ -53,18 +56,24 @@
                 </div>
 
                 <div class="bilde1">
-                    <!-- Foto: fra nettiden Medium.com artikkelnavn: "The evolution of mobile devices" (forfatter ikke oppgitt på)
-                    Link: https://medium.com/@s92063042/history-and-evolution-of-smartphones-17987e6f91d1 -->
-                        <img src="/images/pexels-fauxels-3184435.jpg" alt="People using smartphones">
-                        <figcaption class="caption">Smartphone addiction</figcaption>
+                    <!-- Foto: fra nettiden pexels.com. Foto av pixabay. Link til siden: https://www.pexels.com/nb-no/bilde/macbook-bord-teknologi-ipad-356056/-->
+                    <img src="/images/pexels-pixabay-356056.jpg" alt="Smartphones, computer and ipads">
+                    <figcaption class="caption">Electronics</figcaption>
                 </div>
             </div>
         </section>
 
         <hr>
 
+        <!-- Flexbox for å ha bilde og intro key terms side om side -->
         <section>
             <div class="termsflex-container">
+                <div class="bilde2">
+                    <!-- Foto: fra nettiden pexels.com. Foto av pixabay. Link til siden: https://www.pexels.com/nb-no/bilde/antikk-forbindelse-foreldet-klassisk-207456/-->
+                    <img src="./images/pexels-pixabay-207456.jpg" alt="Phones with handset" />
+                    <figcaption class="caption">Phones with handset</figcaption>
+                </div>
+
                 <div class="terms">
                     <h2 class="topical-h2">
                         Key terms
@@ -82,19 +91,12 @@
                         regardless of the user's experience, knowledge, language skills,
                         or current concentration level. </p>
                 </div>
-
-                <div class="bilde2">
-                    <!-- Foto: S92063042 fra nettiden techpoint.africa 
-                    Artikkelnavn: Evolution of mobile phones in Nigeria: How competition made expensive phones cheap
-                    Link: https://techpoint.africa/2020/02/28/mobile-phones-evolution-nigeria/ -->
-                        <img src="./images/phones.jpeg" alt="Smartphones and mobile phones" />
-                        <figcaption class="caption">Smartphones and phones</figcaption>
-                </div>
             </div>
         </section>
 
         <hr>
 
+        <!-- Resten av teksten på siden under flexboksene -->
         <div class="midtdel">
             <div class="topical-h2">
                 <h2>
@@ -115,7 +117,7 @@
                     </a>
                 </p>
             </div>
-    
+
             <div class="fails">
                 <h2 class="topical-h2">
                     Three ways this technology fails to comply with key principles in universal design
@@ -135,7 +137,7 @@
                     </a>
                 </p>
             </div>
-    
+
             <div class="complies">
                 <h2 class="topical-h2">
                     Three ways this technology complies with key principles in universal design
@@ -151,7 +153,7 @@
                     </a>
                 </p>
             </div>
-    
+
             <div class="impact">
                 <h2 class="topical-h2">
                     What is the potential impact of a strict enforcement of universal
@@ -176,6 +178,8 @@
 
 
     <!--FOOTER-->
+
+    <!-- Logoer på venstre side i footeren-->
     <footer class="footer-topical">
         <div class="container-footer">
             <div class="logo-kolonne">
@@ -204,19 +208,22 @@
                 </ui>
             </div>
 
+            <!-- Kontaktinformasjon på høyre side i footeren-->
             <div class="adresse-kolonne">
-                <p class="adresse-tittel">Kontakt oss </p>
+                <p class="adresse-tittel">Contact</p>
                 <address class="kontakt">
                     <p class="address">
-                        Pilestredet 35. Studenttorget
+                        Universalgata 1234
                     </p>
                     <p class="adresse-link">
-                        <a class="footer-link" href="tel:67-45-78-00">67-45-78-00</a><br />
-                        <a class="footer-link" href="mailto:hello@omnifood.com">Oslomet@test.com</a>
+                        <a class="footer-link" href="tel:22-22-00-00">22-22-00-00</a><br />
+                        <a class="footer-link" href="mailto:hello@omnifood.com">universaldesign@contact.com</a>
                     </p>
                 </address>
             </div>
         </div>
+
+        <!-- Copyright i midten av footeren-->
         <div class="copyright">
             <p class="copyright">Copyright &copy; </p>
         </div>
@@ -226,8 +233,6 @@
 </html>
 
 <!--
-
-    Fixed nav på alle sider 
     media query greia 
     mobil visning 
 
