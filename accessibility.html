@@ -12,25 +12,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nunito&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="main-header">
+    <!-- Header og navigasjonsbar start -->
+    <div class="index-header">
         <picture class="nav-logo">
-            <img src="./images/svart_logo_oslomet.png" alt="oslomet logo svart"/>
+            <img src="./images/svart_logo_oslomet.png" alt="Oslomet-logo i svart"/>
         </picture>
-        <nav class="index-nav">
-            <ul class="navigations">
-                    <li class="nav-buttons"><a href="./index.html">Home</a></li>
-                    <li class="nav-buttons dropmenu">
-                        <a class="dropbtn">Menu</a>
+        <nav>
+            <ul class="navigations">                                  
+                    <li class="nav-buttons"><a href="./index.html">
+                        <!-- hjem-ikon -->
+                        <i class="fa fa-home"></i></a></li>
+                        
+                    <!-- Dropdown-meny start-->
+                    <li class="nav-buttons dropmenu">   
+                        <a class="dropbutton">
+                            <!-- meny-ikon -->
+                            <i class="fa fa-bars"></i>
+                        </a>
                         <div class="dropmenu-content">
-                            <a href="./accessibility.html">Accessibility</a>
                             <a href="./topical.html">Topical page</a>
                             <a href="./campus.html">Our campus</a>
+                            <a href="./accessibility.html">Accessibility</a>
                           </div>
                     </li>
+                    <!-- Dropdown-meny slutt -->
             </ul>
         </nav>
     </div>
-
+    <!-- Header og navigasjonsbar slutt -->
     <main>
 
         <section>
@@ -87,23 +96,23 @@
 
                 <ui class="sosiale-medier">
                     <li>
-                        <a class="sosiale-link" href="#">
-                            <i class="fab fa-facebook"></i> <!--facebok-ikon -->
+                        <a class="sosiale-link" href="https://www.facebook.com/oslomet/" alt="Facebook">
+                            <i class="fab fa-facebook"></i> <!--facebook-ikon -->
                         </a>
 
                     </li>
                     <li>
-                        <a class="sosiale-link" href="#">
+                        <a class="sosiale-link" href="https://www.instagram.com/oslomet/?hl=nb" alt="Instagram">
                             <i class="fab fa-instagram"></i><!-- instagram-ikon -->
                         </a>
                     </li>
                     <li>
-                        <a class="sosiale-link" href="#">
-                            <i class="fab fa-twitter"></i> <!-- LinkedIn-ikon -->
+                        <a class="sosiale-link" href="https://twitter.com/oslomet" alt="Twitter">
+                            <i class="fab fa-twitter"></i> <!-- Twitter-ikon -->
                         </a>
                     </li>
                     <li>
-                        <a class="sosiale-link" href="#">
+                        <a class="sosiale-link" href="https://no.linkedin.com/school/oslomet/" alt="Linkedin">
                             <i class="fab fa-linkedin-in"></i> <!-- LinkedIn-ikon -->
                         </a>
                     </li>
@@ -111,7 +120,7 @@
             </div>
 
             <div class="adresse-kolonne">
-                <p class="adresse-tittel">Kontakt oss </p>
+                <p class="adresse-tittel">Kontakt oss</p>
                 <address class="kontakt">
                     <p class="address">
                         Pilestredet 35. Studenttorget

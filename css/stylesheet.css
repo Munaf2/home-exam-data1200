@@ -4,39 +4,41 @@
     box-sizing: border-box;
 }
 
-img {
+img { 
+    /* skalering av alle img */
     width: 100%;
     height: auto;
 }
 
 nav {
-    padding: 10px;
+    padding: 5px;
 }
 
-.main-header {
-    position: sticky;
+/* css til index-siden */
+
+/* header styling */
+.index-header {
+    position: sticky; /* fester header til sin posisjon*/
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*forflytter logo og nav på hver sin side*/
     padding: 10px;
     background-color: #4989CA;
     width: 100%;
     top: 0;
+    z-index: 2;
 }
 
-/*navigation bar in header*/
-.index-nav {
-    display: flex;
-    justify-content: flex-end;
-}
+/*navigasjonsbar på index-siden*/
 
 .navigations {
     display: flex;
-    justify-content: flex-end;
     list-style-type: none;
 }
+/* css av lenker til navigering */
+/* Dropdown menu css fra: https://www.w3schools.com/Css/tryit.asp?filename=trycss_dropdown_navbar2 */
 
 .nav-buttons a,
-.dropbtn {
+.dropbutton {
     display: inline-block;
     border: none;
     color: black;
@@ -48,38 +50,30 @@ nav {
     padding: 10px 15px;
     text-decoration: none;
 }
-
+/* Dropdown meny start */
 .nav-buttons a:hover,
-.dropmenu:hover .dropbtn {
+.dropmenu:hover .dropbutton {
     background-color: #9fc8d8;
     color: #312e2e;
     text-decoration: underline;
 }
 
 .nav-buttons.dropmenu {
-    display: flex;
+    display: flex; /*fleksibel meny som åpner sidelengs*/
 }
 
 .nav-logo {
-    /*logo*/
+    /*utforming av oslomet-logo*/
     width: 80px;
     height: auto;
     align-self: center;
     margin-left: 5%;
 }
 
-.logo img {
-    width: 100%;
-    height: 100%;
-}
-
-/* Dropdown menu css from: https://www.w3schools.com/Css/tryit.asp?filename=trycss_dropdown_navbar2 */
-
-.dropmenu-content {
-    display: none;
+.dropmenu-content { 
+    display: none; /* Gjemmer meny-innhold */
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -99,20 +93,19 @@ nav {
     display: flex;
 }
 
-/* Dropdown menu end */
+/* Dropdown-meny slutt */
 
 
-/*Index siden */
-.main-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/*hovedinnholdet på index-siden */
+.index-content {
+    display: flex; 
+    flex-direction: column;/* alt innhold ligger etter hverandre i en kolonne */
+    justify-content: center; /*sentrer alt innhold*/
     align-items: center;
-    background-color: #F1F1F1;
     padding: 20px;
 }
 
-.main-content>h2 {
+.index-content>h2 {
     padding: 20px;
 }
 
@@ -124,10 +117,6 @@ nav {
     flex: 1;
     border-top-right-radius: 3%;
     border-top-left-radius: 3%;
-}
-
-.index-image .cover-it {
-    object-fit: cover;
 }
 
 .introductions {
@@ -143,7 +132,7 @@ nav {
 }
 
 .introductions h1 {
-    background-color: #FF8100;
+    background-color: #4989CA;
     padding: 10px 20px;
 }
 
@@ -154,13 +143,15 @@ nav {
 }
 
 .news-tabs {
-    display: flex;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); /*deler området i 3 like kolonner*/
+    grid-template-rows: auto;
     border-top: 1px solid #d4d4d4;
     background-color: white;
 }
 
-@media(max-width:480px) {
-    .news-tabs {
+@media(max-width:500px) { /*legger artiklene nedover i en kolonne på visning mindre enn 480px*/
+    .news-tabs { 
         display: flex;
         flex-direction: column;
     }
@@ -168,20 +159,23 @@ nav {
 
 
 .articles {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 10px;
+    display: grid; 
+    grid-template-columns: repeat(8, 1fr); /*deler området i 8 like kolonner*/
+    grid-template-rows: repeat(6, 1fr); /*deler området i 6 like rader*/
     margin-bottom: 20px;
     margin-top: 20px;
 }
 
 .articles-picture {
+    display:flex;
     grid-column-start: 1;
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 7;
+}
 
+.cover-articles{
+    object-fit: cover;
 }
 
 .articles-content {
@@ -191,7 +185,6 @@ nav {
     grid-row-end: 6;
     background-color: white;
     opacity: 80%;
-    align-content: center;
     padding: 10px;
 }
 
@@ -203,15 +196,6 @@ nav {
 .articles a:hover {
     text-decoration: underline;
     color: #000064;
-}
-
-
-
-.avsnitt1,
-.avsnitt2 {
-    padding: 25px 5px;
-    line-height: 1.5;
-    /*Linke avstand*/
 }
 
 /* KART */
