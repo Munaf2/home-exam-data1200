@@ -469,14 +469,10 @@ ul li {
     display: flex;
 }
 
-.europeanflex-container>div {
-    margin: 10px;
-    padding: 4rem;
-}
-
+.europeanflex-container>div,
 .termsflex-container>div {
     margin: 10px;
-    padding-right: 10rem;
+    padding: 4rem;
 }
 
 .topicalsmartphones {
@@ -517,7 +513,7 @@ h2 {
 .midtdel {
     margin: 45px;
     text-align: left;
-    padding: 80px;
+    padding: 110px;
     padding-top: 30px;
 }
 
