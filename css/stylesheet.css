@@ -107,12 +107,7 @@ nav {
 
 .index-image {
     width: 75%;
-}
-
-.index-image img {
     flex: 1;
-    border-top-right-radius: 3%;
-    border-top-left-radius: 3%;
 }
 
 .index-intro {
@@ -123,12 +118,14 @@ nav {
     background-color: white;
 }
 
-
 .index-intro h1 {
     background-color: #4989CA;
-    padding: 10px 20px;
     text-align: center;
     font-size: 3em;
+}
+
+.index-innlegg{
+    padding:15px;
 }
 
 .headings {
@@ -136,6 +133,8 @@ nav {
     width: 75%;
     padding-top: 20px;
 }
+
+/* fremhevede artikler */
 
 .index-highlights {
     display: grid; 
@@ -151,7 +150,7 @@ nav {
         flex-direction: column;
     }
 }
-
+/* artiklene inni */
 
 .articles {
     display: grid; 
@@ -160,7 +159,7 @@ nav {
     margin-bottom: 20px;
     margin-top: 20px;
 }
-
+/* bildene til artiklene */
 .articles-picture {
     display:flex;
     grid-column-start: 1;
@@ -169,10 +168,12 @@ nav {
     grid-row-end: 7;
 }
 
+/* for å bildene skal fylle boksene */
 .cover-articles{
     object-fit: cover;
 }
 
+/* artikkel innhold */
 .articles-content {
     grid-column-start: 2;
     grid-column-end: 8;
