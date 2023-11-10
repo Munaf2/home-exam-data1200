@@ -105,21 +105,12 @@ nav {
     padding: 20px;
 }
 
-.index-content>h2 {
-    padding: 20px;
-}
-
 .index-image {
     width: 75%;
-}
-
-.index-image img {
     flex: 1;
-    border-top-right-radius: 3%;
-    border-top-left-radius: 3%;
 }
 
-.introductions {
+.index-intro {
     flex: 1;
     width: 75%;
     border: 1px solid #D4D4D4;
@@ -127,15 +118,14 @@ nav {
     background-color: white;
 }
 
-.introductions-content {
-    padding: 20px;
-}
-
-.introductions h1 {
+.index-intro h1 {
     background-color: #4989CA;
-    padding: 10px 20px;
     text-align: center;
     font-size: 3em;
+}
+
+.index-innlegg{
+    padding:15px;
 }
 
 .headings {
@@ -144,7 +134,9 @@ nav {
     padding-top: 20px;
 }
 
-.news-tabs {
+/* fremhevede artikler */
+
+.index-highlights {
     display: grid; 
     grid-template-columns: repeat(3, 1fr); /*deler området i 3 like kolonner*/
     grid-template-rows: auto;
@@ -153,12 +145,12 @@ nav {
 }
 
 @media(max-width:500px) { /*legger artiklene nedover i en kolonne på visning mindre enn 480px*/
-    .news-tabs { 
+    .index-highlights { 
         display: flex;
         flex-direction: column;
     }
 }
-
+/* artiklene inni */
 
 .articles {
     display: grid; 
@@ -167,7 +159,7 @@ nav {
     margin-bottom: 20px;
     margin-top: 20px;
 }
-
+/* bildene til artiklene */
 .articles-picture {
     display:flex;
     grid-column-start: 1;
@@ -176,10 +168,12 @@ nav {
     grid-row-end: 7;
 }
 
+/* for å bildene skal fylle boksene */
 .cover-articles{
     object-fit: cover;
 }
 
+/* artikkel innhold */
 .articles-content {
     grid-column-start: 2;
     grid-column-end: 8;
@@ -288,8 +282,6 @@ nav {
     color: #ddc7c7;
 }
 
-
-
 .campus-container {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -332,33 +324,14 @@ nav {
     padding-top: 25px;
     padding-bottom: 40px;
     font-size: large;
-}
-
-/*  https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_justify-content_end
-
-    To make the grid
-*/
-.stillerom-oversikt {
-    text-align: left;
     font-family: sans-serif;
-    margin: 10px;
 }
 
-.campus-fasiliteter {
-    text-align: left;
-    font-family: sans-serif;
-    margin: 30px;
-}
-
-ul li {
-    margin: 10px;
-    /* For få avstand mellom punktene */
-}
-
-.stillerom-overskrift, .studiesal-overskrift, .seminar-overskrift, .grupperom-overskrift {
-    padding-left: 30px;
-    padding-top: 30px;
-    text-align: left;
+.felles_container {
+    display: grid;
+    grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
+    width: 100%;
+    height: auto;
 }
 
 .image-wrapper {
@@ -369,6 +342,30 @@ ul li {
     gap :10px;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.stillerom-oversikt {
+    text-align: left;
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+.stillerom-overskrift, .studiesal-overskrift, .seminar-overskrift, .grupperom-overskrift {
+    padding-left: 30px;
+    padding-top: 30px;
+    text-align: left;
+}
+
+
+.campus-fasiliteter {
+    text-align: left;
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+ul li {
+    margin: 10px;
+    /* For få avstand mellom punktene */
 }
   
 .image-1, .image-2, .image-4, .image-5, .image-7, .image-8, .image-10, .image-11 {
@@ -386,22 +383,22 @@ ul li {
   object-fit: cover;
 }
 
-.noe {
-    display: grid;
-    grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
-    width: 100%;
-    height: auto;
-  }
-
-.stillerom-container, .studiesal-container, .seminar-container, .grupperom-container {
-    display: grid;
-    grid-template-columns: 45%; /*Make the grid smaller than the container*/
-    grid-template-rows: 40px;  
+.link-campus    {
+    padding: 5px;
+    text-align: center;
 }
 
+.prøve  {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: repeat(2, min-content);
+    place-items: center;
+    gap :10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
-
-  /*    css til topical page      */
+/*    css til topical page      */
 
 /*   Nav  */
 .topical {
