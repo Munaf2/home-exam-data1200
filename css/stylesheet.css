@@ -560,3 +560,39 @@ a:hover {
     margin-left: -2.5rem;
     margin-right: -2.5rem;
 }
+
+
+/* css til accessibility*/
+
+.accessibility-container{
+    display: flex;
+    padding: 60px;
+    border: 6rem;
+    max-width: 100%;
+}
+
+.accessibility-image {
+    max-width: 100%;
+}
+
+.definasion{
+    font-size: 2.5rem;
+    text-align: left;
+    color: black;
+    padding-left: 50px;
+    padding-top: 10px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.beskriver-accissibility{
+    font-size: 1.1rem;
+    color: black;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 8px;
+    font-family: sans-serif;
+    margin: 20px;
+    font-weight: 400;
+}
+
