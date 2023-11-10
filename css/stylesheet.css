@@ -450,6 +450,7 @@ img {
 
 
 
+  
 
   /*    css til topical page      */
 
@@ -476,6 +477,10 @@ img {
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+.topicalmain {
+    padding-top: 200px;
 }
 
 .navlist-topical {
