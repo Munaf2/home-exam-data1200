@@ -19,6 +19,10 @@ a{
     color: inherit;
 
 }
+ul li {
+    margin: 10px;
+}
+  
 p{
     line-height: 1.6;
     text-align: left;
@@ -114,6 +118,59 @@ nav {
 /* Dropdown-meny slutt */
 
 
+/*********/
+/*FOOTER*/
+/*********/
+
+
+.footer {
+    border-top: 1px solid #eee;
+    padding: 1rem 0;
+    background-color: #4989CA;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Dette er logo kolonnen (den venstre kolonnnen)*/
+.logo-kolonne {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+}
+
+.logo-footer {
+    margin-bottom: 1rem;
+}
+
+.sosiale-medier {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.sosiale-link:hover,
+.sosiale-link:active,.footer-link:hover,
+.footer-link:active {
+    color: #ccc;
+}
+
+/**Dette er kontakt oss kolonnen (venstre kolonne**/
+
+.adresse-kolonne {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-right: 70px;
+
+}
+.adresse-tittel {
+    font-size: 25px;
+    font-weight: bold;
+    margin:5px 0 2px 0 ;
+}
 
 
 /**************/
@@ -201,59 +258,7 @@ nav {
     padding: 3rem;
 }
 
-/*********/
-/*FOOTER*/
-/*********/
 
-
-.footer {
-    border-top: 1px solid #eee;
-    padding: 1rem 0;
-    background-color: #4989CA;
-}
-
-.container-footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-/*Dette er logo kolonnen (den venstre kolonnnen)*/
-.logo-kolonne {
-    display: flex;
-    flex-direction: column;
-    padding: 0 50px;
-}
-
-.logo-footer {
-    margin-bottom: 1rem;
-}
-
-.sosiale-medier {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-}
-
-.sosiale-link:hover,
-.sosiale-link:active,.footer-link:hover,
-.footer-link:active {
-    color: #ccc;
-}
-
-/**Dette er kontakt oss kolonnen (venstre kolonne**/
-
-.adresse-kolonne {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-right: 70px;
-
-}
-.adresse-tittel {
-    font-size: 25px;
-    font-weight: bold;
-    margin:5px 0 2px 0 ;
-}
 
 /*********************************/
 /**CAMPUS OG ACCESSIBILITY SIDEN**/
@@ -303,11 +308,7 @@ nav {
     margin: 30px;
 }
 
-ul li {
-    margin: 10px;
-    /* For få avstand mellom punktene */
-}
-  
+
 .image-1, .image-2, .image-4, .image-5, .image-7, .image-8, .image-10, .image-11 {
   grid-column: 1 / -1;
   width: 300px;
@@ -337,15 +338,9 @@ ul li {
     padding-left: 15px;
     padding-right: 15px;
 }
-
-/*    css til topical page      */
-
-/*   Nav  */
-.topical {
-    background-color: rgb(227, 227, 219);
-
-    font-weight: 500;
-}
+/***************/
+/*TOPICAL PAGE*/
+/**************/
 
 .overskrift {
     text-align: left;
@@ -354,27 +349,10 @@ ul li {
     font-weight: 900;
 }
 
-/*   For å ha nav i fixed position  */
-.topicalnav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.videotopical{
+    text-align: center;
+    margin-top: 20px;
 }
-
-.topicalmain {
-    padding-top: 200px;
-}
-
-.navlist-topical {
-    display: flex;
-    justify-content: flex-end;
-    /* moves nav buttons to the left*/
-    list-style: none;
-    padding-top: 45px;
-}
-
 .overskrift1 {
     font-size: 3rem;
 }
@@ -394,23 +372,22 @@ ul li {
     padding: 4rem;
 }
 
-.topicalsmartphones {
+.overskriftmartphones {
     font-size: 2.5rem;
     font-weight: bold;
-    padding-top: 3.5rem;
+    padding: 2rem 2rem;
     text-align: center;
 }
 
-h2 {
-    font-size: 1.7rem;
-    padding-top: 1.5rem;
-}
+
 
 .topical-p {
-    font-size: 1.3rem;
-    padding-top: 1.5rem;
+    font-size: 1.4rem;
+    padding-top: 1.7rem;
 }
-
+.topical-h2{
+    font-size: 1.5rem;
+}
 .introtekst {
     padding-right: 15rem;
 }
@@ -439,62 +416,6 @@ h2 {
     text-align: left;
     padding: 110px;
     padding-top: 30px;
-}
-
-a:link {
-    color: black;
-}
-
-a:hover {
-    color: blue;
-}
-
-.topicalnav,
-.bottom {
-    padding: 0.5rem 0;
-    background-color: rgb(194, 194, 183);
-    margin-left: -3rem;
-    margin-right: -3rem;
-}
-
-.topical-buttons {
-    /*navigation buttons*/
-    margin-right: 1rem;
-    margin-left: 0.5rem;
-    margin-top: 2rem;
-}
-
-.topical-buttons>a {
-    /*navigation font, else it is arial */
-    font-size: 1.3rem;
-    font-weight: 900;
-    font-variant: all-small-caps;
-    /*font in uppercase*/
-    color: black;
-    text-decoration: none;
-    padding: 0.5em 1em;
-}
-
-.topical-buttons>a:hover {
-    background-color: white;
-    border-radius: 10%;
-    color: black;
-
-}
-
-.sosiale-medier-topical {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    padding: 20px;
-}
-
-.footer-topical {
-    border-top: 1px solid #eee;
-    padding: 1rem 0;
-    background-color: rgb(194, 194, 183);
-    margin-left: -2.5rem;
-    margin-right: -2.5rem;
 }
 
 
@@ -549,6 +470,16 @@ a:hover {
 
 
 
+@media screen and (max-width: 600px) {
+    .campus-intro {
+        font-size: 1rem;
+   
+        padding-left: 5px;
+
+
+    }
+
+    }
 
 
     

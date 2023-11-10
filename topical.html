@@ -12,25 +12,31 @@
 
 <!-- Todelt nav. På høyre siden er det navnet på siden-->
 <body class="topical">
-    <header>
-        <nav class="topicalnav">
-            <div class="overskrift">
-                <h1 class="overskrift1">UNIVERSAL </h1>
-                <h1 class="overskrift2"> DESIGN</h1>
-            </div>
-
-            <!-- Todelt nav. På venstre side er det link til de andre sidene. -->
-            <div>
-                <ul class="navlist-topical">
-                    <li class="topical-buttons"><a href="index.html">Home</a></li>
-                    <li class="topical-buttons"><a href="campus.html">Our campus</a></li>
-                    <li class="topical-buttons"><a href="topical.html">Topical page</a></li>
-                    <li class="topical-buttons"><a href="accessibility.html">Accessibility</a></li>
-                </ul>
-            </div>
-
-        </nav>
-    </header>
+     <!-- Header og navigasjonsbar start -->
+<div class="index-header">
+    <picture class="nav-logo">
+        <!-- Logo kilde: https://foto.oslomet.no/fotoweb/archives/5005-OsloMet-logo/Folder%2052/Logomedsignatur_gul_OsloMet-01.png.info -->
+        <img src="./images/svart_logo_oslomet.png" alt="Oslomet-logo i svart"/>
+    </picture>
+    <nav>
+        <ul class="navigations">                                  
+                <!-- Dropdown-meny start-->
+                <li class="nav-buttons dropmenu">   
+                    <a class="dropbutton">
+                        <!-- meny-ikon -->
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div class="dropmenu-content">
+                        <a href="./index.html">Home</a>
+                        <a href="./campus.html">Our campus</a>
+                        <a href="./topical.html">Topical page</a>
+                        <a href="./accessibility.html">Accessibility</a>
+                      </div>
+                </li>
+                <!-- Dropdown-meny slutt -->
+        </ul>
+    </nav>
+</div>
 
     <!-- Video fra pexels.com. Video av Fauxels. Link til siden: https://www.pexels.com/nb-no/video/3251809/. 
     Bruker <video> for at banneret med lyd og muligheten til å ta videoen foran osv. ikke kommer med. -->
@@ -39,7 +45,7 @@
             <video src="images/video (540p) (1).mp4" muted loop autoplay></video>
         </section>
 
-        <h2 class="overskriftmartphones"> Smartphones</h2>
+        <h1 class="overskriftmartphones"> Smartphones</h2>
 
         <!-- Flexbox for å ha bilde og intro tekst side om side -->
         <section>
@@ -99,7 +105,7 @@
         <!-- Resten av teksten på siden under flexboksene -->
         <div class="midtdel">
             <div class="topical-h2">
-                <h1 class="smartphoneusage">Smartphone Usage</h1>
+                <h1 class="overskriftmartphones">Smartphone Usage</h1>
                 <h2>
                     The current usage of smartphones in everyday life
                 </h2>
@@ -179,21 +185,23 @@
 
 
     <!--FOOTER-->
-
-    <!-- Logoer på venstre side i footeren-->
-    <footer class="footer-topical">
+    <footer class="footer">
         <div class="container-footer">
             <div class="logo-kolonne">
-                <ui class="sosiale-medier-topical">
+                <a href="#" class="logo-footer">
+                    <img class="nav-logo" alt="OsloMet logo" src="images/logo_oslomet_gul.png">
+                </a>
+
+                <ui class="sosiale-medier">
                     <li>
                         <a class="sosiale-link" href="https://www.facebook.com/oslomet/" alt="Facebook">
-                            <i class="fab fa-facebook"></i> <!--facebook-ikon -->
+                            <i class="fab fa-facebook"></i> <!--Facebook-ikon -->
                         </a>
 
                     </li>
                     <li>
                         <a class="sosiale-link" href="https://www.instagram.com/oslomet/?hl=nb" alt="Instagram">
-                            <i class="fab fa-instagram"></i><!-- instagram-ikon -->
+                            <i class="fab fa-instagram"></i><!-- Instagram-ikon -->
                         </a>
                     </li>
                     <li>
@@ -209,22 +217,19 @@
                 </ui>
             </div>
 
-            <!-- Kontaktinformasjon på høyre side i footeren-->
             <div class="adresse-kolonne">
-                <p class="adresse-tittel">Contact</p>
+                <h3 class="adresse-tittel">Kontakt oss</h3>
                 <address class="kontakt">
                     <p class="address">
-                        Universalgata 1234
+                        Pilestredet 35. Studenttorget
                     </p>
                     <p class="adresse-link">
-                        <a class="footer-link" href="tel:22-22-00-00">22-22-00-00</a><br />
-                        <a class="footer-link" href="mailto:hello@omnifood.com">universaldesign@contact.com</a>
+                        <a class="footer-link" href="tel:67-45-78-00">67-45-78-00</a><br />
+                        <a class="footer-link" href="mailto:hello@omnifood.com">Oslomet@test.com</a>
                     </p>
                 </address>
             </div>
         </div>
-
- 
     </footer>
 </body>
 
