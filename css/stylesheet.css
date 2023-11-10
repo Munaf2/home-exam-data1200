@@ -16,6 +16,12 @@ body {
   
 a{
     text-decoration: none;
+    color: inherit;
+
+}
+p{
+    line-height: 1.6;
+    text-align: left;
 
 }
 
@@ -30,7 +36,6 @@ nav {
 }
 
 
-/* css til index-siden */
 
 /**************************/
 /****** HEADER *************/
@@ -46,7 +51,7 @@ nav {
     z-index: 2;
 }
 
-/*navigasjonsbar på index-siden*/
+/*navigasjonsbar*/
 
 .navigations {
     display: flex;
@@ -54,23 +59,18 @@ nav {
 }
 /* css av lenker til navigering */
 /* Dropdown menu css fra: https://www.w3schools.com/Css/tryit.asp?filename=trycss_dropdown_navbar2 */
-
 .nav-buttons a,
 .dropbutton {
-    display: inline-block;
-    border: none;
     color: black;
     font-variant-caps: all-small-caps;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     font-weight: 900;
-    text-align: center;
     padding: 10px 15px;
     display: none;
 }
 /* Dropdown meny start */
 .nav-buttons a:hover,
 .dropmenu:hover .dropbutton {
-    background-color: #9fc8d8;
     color: #312e2e;
 }
 
@@ -95,13 +95,12 @@ nav {
 .dropmenu-content a {
     color: black;
     padding: 12px 16px;
-    text-decoration: none;
     display: block;
-    text-align: left;
+
 }
 
 .dropmenu-content a:hover {
-    background-color: #9fc8d8;
+    background-color: #dae5e9;
 }
 
 .dropmenu:hover .dropmenu-content {
@@ -115,7 +114,11 @@ nav {
 /* Dropdown-meny slutt */
 
 
-/*hovedinnholdet på index-siden */
+
+
+/**************/
+/*INDEX SIDEN */
+/**************/
 .index-content {
     display: flex; 
     flex-direction: column;/* alt innhold ligger etter hverandre i en kolonne */
@@ -144,7 +147,7 @@ nav {
 }
 
 .index-innlegg{
-    padding:15px;
+    padding:0 15px;
 }
 
 .headings {
@@ -163,25 +166,19 @@ nav {
     background-color: white;
 }
 
-
-
 /* artiklene inni */
 
 .articles {
     display: grid; 
     grid-template-columns: repeat(8, 1fr); /*deler området i 8 like kolonner*/
     grid-template-rows: repeat(6, 1fr); /*deler området i 6 like rader*/
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin: 20px 0; /* 20px topp og bunn, 0 for venstre og høyre */
 }
 /* bildene til artiklene */
 .articles-picture {
-    display:flex;
-    grid-column-start: 1;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 7;
-}
+    grid-area: 1 / 1 / 7 / 9;  /* dekke radene fra 1 til 7 og kolonnene fra 1 til 8*/
+    display: flex;
+  }
 
 /* for å bildene skal fylle boksene */
 .cover-articles{
@@ -190,25 +187,11 @@ nav {
 
 /* artikkel innhold */
 .articles-content {
-    grid-column-start: 2;
-    grid-column-end: 8;
-    grid-row-start: 2;
-    grid-row-end: 6;
+    grid-area: 2 / 2 / 6 / 8;
     background-color: white;
     opacity: 80%;
     padding: 10px;
 }
-
-.articles a {
-    text-decoration: none;
-    color: black;
-}
-
-.articles a:hover {
-    text-decoration: underline;
-    color: #000064;
-}
-
 /* KART */
 .overskriftkart {
     text-align: center;
@@ -218,7 +201,11 @@ nav {
     padding: 3rem;
 }
 
+/*********/
 /*FOOTER*/
+/*********/
+
+
 .footer {
     border-top: 1px solid #eee;
     padding: 1rem 0;
@@ -228,15 +215,13 @@ nav {
 .container-footer {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
 }
 
 /*Dette er logo kolonnen (den venstre kolonnnen)*/
 .logo-kolonne {
     display: flex;
     flex-direction: column;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 50px;
 }
 
 .logo-footer {
@@ -247,17 +232,12 @@ nav {
     list-style: none;
     display: flex;
     gap: 1.5rem;
-
 }
 
 .sosiale-link:hover,
-.sosiale-link:active {
+.sosiale-link:active,.footer-link:hover,
+.footer-link:active {
     color: #ccc;
-}
-
-.footer-link {
-    height: 2.4rem;
-    width: 2.4rem;
 }
 
 /**Dette er kontakt oss kolonnen (venstre kolonne**/
@@ -269,88 +249,41 @@ nav {
     padding-right: 70px;
 
 }
-
-.copyright {
-    font-size: 20px;
-    text-align: center;
-}
-
 .adresse-tittel {
     font-size: 25px;
     font-weight: bold;
-    margin-bottom: 20px;
-    margin-top: 5px;
+    margin:5px 0 2px 0 ;
 }
 
-.address {
-    font-size: 15px;
-    padding-bottom: 10px;
-}
+/*********************************/
+/**CAMPUS OG ACCESSIBILITY SIDEN**/
+/*********************************/
 
-.footer-link {
-    text-decoration: none;
-    color: #312e2e;
-}
-
-.footer-link:hover,
-.footer-link:active {
-    color: #ddc7c7;
-}
-
-
-/**Campus **/
 .campus-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns */
-    gap: 20px; /* Adjust the gap between columns if desired */
-    place-items: center; /* Sentrer både horisontalt og vertikalt */
-
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
     padding: 60px;
 }
-.campus-img{
-    max-width: 100%; /* Make sure the image doesn't exceed its container */
-    height: auto; /* Maintain the aspect ratio of the image */
-    display: block; /* Remove extra space below the image */
-}
+
 .campus-overskrift {
     font-size: 2.5rem;
-    text-align: left;
-    color: black;
-    padding-left: 50px;
-    padding-top: 10px;
-    font-weight: 600;
+
 }
 
 .campus-intro {
     font-size: 1.1rem;
-    color: black;
-    text-align: left;
-    padding-left: 40px;
-    padding-top: 8px;
-    margin: 20px;
-    font-weight: 400;
-}
 
+}
 .oversiktstittel {
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    font-weight: 600;
-}
+    
 
+}
 .oversiktsparagraf {
-    margin-left: 80px;
-    margin-right: 80px;
-    padding-top: 25px;
-    padding-bottom: 40px;
-    font-size: large;
-}
-
-.felles_container {
-    display: grid;
-    grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
-    width: 100%;
-    height: auto;
+    margin: 0 50px 0 50px;
+    padding: 25px 0 40px 0;
+    font-size: 20px;
 }
 
 .image-wrapper {
@@ -359,24 +292,14 @@ nav {
     grid-template-rows: repeat(2, min-content);
     place-items: center;
     gap :10px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
-.stillerom-oversikt {
-    text-align: left;
-    margin: 10px;
 }
 
 .stillerom-overskrift, .studiesal-overskrift, .seminar-overskrift, .grupperom-overskrift {
-    padding-left: 30px;
-    padding-top: 30px;
+    padding:30px 0 0 30px;
     text-align: left;
 }
-
-
 .campus-fasiliteter {
-    text-align: left;
     margin: 30px;
 }
 
@@ -426,9 +349,8 @@ ul li {
 
 .overskrift {
     text-align: left;
-    padding-top: 3rem;
-    padding-left: 3rem;
-    padding-bottom: 3rem;
+    padding: 3rem 0 3rem 3rem ;
+   
     font-weight: 900;
 }
 
@@ -576,47 +498,6 @@ a:hover {
 }
 
 
-/* css til accessibility*/
-
-.accessibility-container{
-    display: flex;
-    padding: 50px;
-    max-width: 100%;
-
-}
-
-.accessibility-image {
-    max-width: 50%;
-    padding-right: 20px;
-}
-
-.definasion{
-    font-size: 2.5rem;
-    text-align: left;
-    color: black;
-    padding-left: 50px;
-    padding-top: 10px;
-    font-weight: 600;
-}
-.access-container{
-    margin-top: 100px;
-    margin-bottom: 50px;
-    display: flex;
-    max-width: 100%;
-
-}
-
-.beskriver-accissibility,.beskriver-accis{
-    font-size: 1.1rem;
-    color: black;
-    text-align: left;
-    padding-left: 40px;
-    padding-top: 8px;
-    font-family: sans-serif;
-    margin: 20px;
-    font-weight: 400;
-}
-
 
 
 
@@ -637,6 +518,7 @@ a:hover {
     font-variant-caps: all-small-caps;
     text-align: center;
     padding: 10px 15px;
+    font-size: 1.2rem;
    
 }
 
@@ -645,23 +527,6 @@ a:hover {
 
 }
 
-.access-container,.accessibility-container{
-    flex-direction: column;
-    align-items: center;
-
-}
-.access-container{
-    margin-top: 4px;
-    margin-bottom: 80px;
-}
-
-.accessibility-image {
-    max-width: 70%
-    
-}
-.img-container{
-   padding-left: 90px;
-}
 .prøve  {
     display: grid;
     grid-template-columns:  2fr;
@@ -684,24 +549,6 @@ a:hover {
 
 
 
-@media screen and (max-width: 600px) {
-    .definasion{
-        font-size: 1.5rem;
-    
-    }
-   
-    .campus-intro {
-        font-size: 1rem;
-   
-        padding-left: 5px;
-
-
-    }
- 
-
-    
-
-    }
 
 
     
