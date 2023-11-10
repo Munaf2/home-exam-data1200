@@ -390,15 +390,9 @@ ul li {
     /* For få avstand mellom punktene */
 }
 
-
-.stillerom-overskrift {
+.stillerom-overskrift, .studiesal-overskrift {
     padding-left: 30px;
     padding-top: 40px;
-}
-
-.studiesal-overskrift {
-    padding-left: 30px;
-    padding-top: 5px;
 }
 
 .image-wrapper {
@@ -429,7 +423,6 @@ ul li {
     grid-template-rows: repeat(2, min-content);
     place-items: center;
     gap :10px;
-    padding: px;
 }
 
 .image-4, .image-5 {
