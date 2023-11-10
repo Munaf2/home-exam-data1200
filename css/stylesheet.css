@@ -134,6 +134,8 @@ nav {
 .introductions h1 {
     background-color: #4989CA;
     padding: 10px 20px;
+    text-align: center;
+    font-size: 3em;
 }
 
 .headings {
