@@ -447,7 +447,11 @@ img {
     display: grid;
     grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
   }
-/*    css til topical page      */
+
+
+
+
+  /*    css til topical page      */
 
 /*   Nav  */
 .topical {
@@ -536,6 +540,11 @@ h2 {
     padding-bottom: 4rem;
 }
 
+
+.smartphoneusage{
+    font-size: 40px;
+    text-align: center;
+}
 .midtdel {
     margin: 45px;
     text-align: left;
