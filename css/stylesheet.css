@@ -40,7 +40,6 @@ nav {
 }
 
 
-
 /**************************/
 /****** HEADER *************/
 /**************************/
@@ -342,23 +341,11 @@ nav {
 /*TOPICAL PAGE*/
 /**************/
 
-.overskrift {
-    text-align: left;
-    padding: 3rem 0 3rem 3rem ;
-   
-    font-weight: 900;
-}
+
 
 .videotopical{
     text-align: center;
     margin-top: 20px;
-}
-.overskrift1 {
-    font-size: 3rem;
-}
-
-.overskrift2 {
-    font-size: 2.5rem;
 }
 
 .europeanflex-container,
@@ -374,12 +361,12 @@ nav {
 
 .overskriftmartphones {
     font-size: 2.5rem;
-    font-weight: bold;
     padding: 2rem 2rem;
     text-align: center;
 }
-
-
+.topical-head{
+    background-color: rgb(194, 194, 183);
+}
 
 .topical-p {
     font-size: 1.4rem;
@@ -394,31 +381,14 @@ nav {
 
 .caption {
     font-size: 0.9rem;
-    font-style: normal;
 }
 
-.bilde1,
-.bilde2 {
-    padding-top: 6rem;
-}
-
-.impact {
-    padding-bottom: 4rem;
-}
-
-
-.smartphoneusage{
-    font-size: 40px;
-    text-align: center;
-}
 .midtdel {
     margin: 45px;
     text-align: left;
     padding: 110px;
     padding-top: 30px;
 }
-
-
 
 
 
@@ -466,20 +436,32 @@ nav {
     display: flex;
     flex-direction: column;
 }
+
+.europeanflex-container,
+.termsflex-container {
+   flex-direction: column;
+}
+.midtdel{
+    padding: 10px;
 }
 
+video{
+    width: 100%;
+}
 
+}
 
 @media screen and (max-width: 600px) {
     .campus-intro {
         font-size: 1rem;
    
         padding-left: 5px;
-
+    }
+  
+    
 
     }
 
-    }
 
 
     

@@ -11,33 +11,32 @@
 </head>
 
 <!-- Todelt nav. På høyre siden er det navnet på siden-->
-<body class="topical">
+<body>
      <!-- Header og navigasjonsbar start -->
-<div class="index-header">
-    <picture class="nav-logo">
-        <!-- Logo kilde: https://foto.oslomet.no/fotoweb/archives/5005-OsloMet-logo/Folder%2052/Logomedsignatur_gul_OsloMet-01.png.info -->
-        <img src="./images/svart_logo_oslomet.png" alt="Oslomet-logo i svart"/>
-    </picture>
-    <nav>
-        <ul class="navigations">                                  
-                <!-- Dropdown-meny start-->
-                <li class="nav-buttons dropmenu">   
-                    <a class="dropbutton">
-                        <!-- meny-ikon -->
-                        <i class="fa fa-bars"></i>
-                    </a>
-                    <div class="dropmenu-content">
-                        <a href="./index.html">Home</a>
-                        <a href="./campus.html">Our campus</a>
-                        <a href="./topical.html">Topical page</a>
-                        <a href="./accessibility.html">Accessibility</a>
-                      </div>
-                </li>
-                <!-- Dropdown-meny slutt -->
-        </ul>
-    </nav>
-</div>
-
+     <div class="index-header topical-head">
+        <picture class="nav-logo">
+            <!-- Logo kilde: https://foto.oslomet.no/fotoweb/archives/5005-OsloMet-logo/Folder%2052/Logomedsignatur_gul_OsloMet-01.png.info -->
+            <img src="./images/svart_logo_oslomet.png" alt="Oslomet-logo i svart"/>
+        </picture>
+        <nav>
+            <ul class="navigations">                                  
+                    <!-- Dropdown-meny start-->
+                    <li class="nav-buttons dropmenu">   
+                        <a class="dropbutton">
+                            <!-- meny-ikon -->
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <div class="dropmenu-content">
+                            <a href="./index.html">Home</a>
+                            <a href="./campus.html">Our campus</a>
+                            <a href="./topical.html">Topical page</a>
+                            <a href="./accessibility.html">Accessibility</a>
+                          </div>
+                    </li>
+                    <!-- Dropdown-meny slutt -->
+            </ul>
+        </nav>
+    </div>
     <!-- Video fra pexels.com. Video av Fauxels. Link til siden: https://www.pexels.com/nb-no/video/3251809/. 
     Bruker <video> for at banneret med lyd og muligheten til å ta videoen foran osv. ikke kommer med. -->
     <main class="topicalmain">
@@ -145,7 +144,7 @@
                 </p>
             </div>
 
-            <div class="complies">
+            <div class="fails">
                 <h2 class="topical-h2">
                     Three ways this technology complies with key principles in universal design
                 </h2>
@@ -161,7 +160,7 @@
                 </p>
             </div>
 
-            <div class="impact">
+            <div class="fails">
                 <h2 class="topical-h2">
                     What is the potential impact of a strict enforcement of universal
                     design on all digital products?
@@ -181,11 +180,15 @@
                 </p>
             </div>
         </div>
+
+
+ 
+    
     </main>
 
 
     <!--FOOTER-->
-    <footer class="footer">
+    <footer class="footer topical-head">
         <div class="container-footer">
             <div class="logo-kolonne">
                 <a href="#" class="logo-footer">
