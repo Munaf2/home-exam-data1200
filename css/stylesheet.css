@@ -426,7 +426,7 @@ ul li {
 }
 
 .topicalmain {
-    padding-top: 200px;
+    padding-top: 205px;
 }
 
 .navlist-topical {
@@ -445,6 +445,10 @@ ul li {
     font-size: 2.5rem;
 }
 
+.videotopical{
+object-fit: fill;
+}
+
 .europeanflex-container,
 .termsflex-container {
     display: flex;
@@ -456,10 +460,10 @@ ul li {
     padding: 4rem;
 }
 
-.topicalsmartphones {
+.overskriftsmartphones {
     font-size: 2.5rem;
     font-weight: bold;
-    padding-top: 3.5rem;
+    padding-top: 4.5rem;
     text-align: center;
 }
 
@@ -478,7 +482,7 @@ h2 {
 }
 
 .caption {
-    font-size: 0.9rem;
+    font-size: 1em;
     font-style: normal;
 }
 
@@ -491,16 +495,19 @@ h2 {
     padding-bottom: 4rem;
 }
 
-
 .smartphoneusage{
-    font-size: 40px;
+    font-size: 2.5em;
     text-align: center;
+    padding-bottom:15px;
 }
+
 .midtdel {
     margin: 45px;
     text-align: left;
     padding: 110px;
     padding-top: 30px;
+    padding-bottom: 30px;
+
 }
 
 a:link {
@@ -512,11 +519,11 @@ a:hover {
 }
 
 .topicalnav,
-.bottom {
-    padding: 0.5rem 0;
+.bottom {  
     background-color: rgb(194, 194, 183);
     margin-left: -3rem;
     margin-right: -3rem;
+    
 }
 
 .topical-buttons {
@@ -529,7 +536,7 @@ a:hover {
 .topical-buttons>a {
     font-family: 'Nunito', sans-serif;
     /*navigation font, else it is arial */
-    font-size: 1.3rem;
+    font-size: 1.3em;
     font-weight: 900;
     font-variant: all-small-caps;
     /*font in uppercase*/
@@ -559,6 +566,8 @@ a:hover {
     margin-left: -2.5rem;
     margin-right: -2.5rem;
 }
+
+
 
 
 /* css til accessibility*/
