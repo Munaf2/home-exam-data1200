@@ -368,75 +368,21 @@ ul li {
     padding-left: 15px;
     padding-right: 15px;
 }
-
-.image-wrapper1 {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: repeat(2, min-content);
-    place-items: center;
-    gap :10px;
-    padding-left: 15px;
-}
   
-.image-1, .image-2 {
+.image-1, .image-2, .image-4, .image-5, .image-7, .image-8, .image-10, .image-11 {
   grid-column: 1 / -1;
   width: 300px;
   height: 200px;
   object-fit: cover;
 }
 
-.image-3 {
+.image-3, .image-6, .image-9, .image-12 {
   grid-row: 1 / 3;
   grid-column: 3 / 3;
   width: 300px;
   height: 410px;
   object-fit: cover;
 }
-
-.image-4, .image-5 {
-    grid-row: 2 / 3;
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.image-6 {
-  grid-row: 3 / 3;
-  grid-column: 1 / -1;
-  width: 610px;
-  height: 220px;
-  object-fit: cover;
-}
-
-.image-7, .image-8 {
-    grid-row: 2 / 3;
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.image-9 {
-  grid-row: 3 / 3;
-  grid-column: 1 / -1;
-  width: 610px;
-  height: 220px;
-  object-fit: cover;
-}
-
-.image-10, .image-11 {
-    grid-column: 1 / -1;
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .image-12 {
-    grid-row: 1 / 3;
-    grid-column: 3 / 3;
-    width: 300px;
-    height: 410px;
-    object-fit: cover;
-  }
 
 .noe {
     display: grid;
@@ -445,33 +391,11 @@ ul li {
     height: auto;
   }
 
-.stillerom-container {
-    display: grid;
-    grid-template-columns: 45%; /*Make the grid smaller than the container*/
-    grid-template-rows: 40px;  
-    width: 100%;
-    height: auto;
-}
-
-.studiesal-container {
+.stillerom-container, .studiesal-container, .seminar-container, .grupperom-container {
     display: grid;
     grid-template-columns: 45%; /*Make the grid smaller than the container*/
     grid-template-rows: 40px;  
 }
-
-.seminar-container {
-    display: grid;
-    grid-template-columns: 45%; /*Make the grid smaller than the container*/
-    grid-template-rows: 40px;  
-}
-
-.grupperom-container {
-    display: grid;
-    grid-template-columns: 45%; /*Make the grid smaller than the container*/
-    grid-template-rows: 40px;  
-}
-
-
 
   /*    css til topical page      */
 
