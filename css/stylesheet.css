@@ -446,7 +446,7 @@ ul li {
 }
 
 .videotopical{
-object-fit: fill;
+    position: relative;
 }
 
 .europeanflex-container,
