@@ -17,6 +17,11 @@ a{
     color: inherit;
 
 }
+a:hover{
+    text-decoration: underline;
+
+}
+
 ul li {
     margin: 10px;
 }
@@ -244,7 +249,7 @@ nav {
 .articles-content {
     grid-area: 2 / 2 / 6 / 8;
     background-color: white;
-    opacity: 80%;
+    opacity: 90%;
     padding: 10px;
 }
 /* KART */
