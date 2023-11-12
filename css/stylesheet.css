@@ -61,6 +61,7 @@ nav {
 
 .navigations {
     display: flex;
+    flex-direction: column;
     list-style-type: none;
 }
 /* css av lenker til navigering */
@@ -82,7 +83,7 @@ nav {
 }
 
 .nav-buttons.dropmenu {
-    display: flex; /*fleksibel meny som åpner sidelengs*/
+    display: flex; /*fleksibel meny som åpner i samme akse*/
 }
 
 .nav-logo {
@@ -111,7 +112,7 @@ nav {
 }
 
 .dropmenu:hover .dropmenu-content {
-    display: flex;
+    display: flex; /*menyen legger seg i en rad*/
 }
 
 .fa{
@@ -400,21 +401,34 @@ nav {
 /*****TABLETS*****/
 /*****************/
 @media screen and (max-width: 768px) {
+
+/* navigasjonsbar */
     
 .dropmenu-content { 
     display: none;
     font-size: 10px;
 }
 
+.nav-buttons.dropmenu{
+    flex-direction: column;
+}
+
 .nav-buttons a,
 .dropbutton {
-    display: block;
+    display: flex;
     font-variant-caps: all-small-caps;
     text-align: center;
     padding: 10px 15px;
     font-size: 1.2rem;
 }
 
+.dropmenu:hover .dropmenu-content {
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* campus side */
 .campus-container {
     grid-template-columns: 1fr 1fr; 
 
@@ -434,10 +448,14 @@ nav {
     grid-template-columns: 1fr; /* Two columns */
  
 }
+
+/* index-side */
 .index-highlights { 
     display: flex;
     flex-direction: column;
 }
+
+/* topical-side */
 
 .europeanflex-container,
 .termsflex-container {
