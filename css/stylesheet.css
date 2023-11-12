@@ -3,7 +3,6 @@
 /************/
 * {
     padding: 0;
-  
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 
@@ -62,6 +61,7 @@ nav {
 }
 /* css av lenker til navigering */
 /* Dropdown menu css fra: https://www.w3schools.com/Css/tryit.asp?filename=trycss_dropdown_navbar2 */
+
 .nav-buttons a,
 .dropbutton {
     color: black;
@@ -69,7 +69,7 @@ nav {
     font-size: 1.7rem;
     font-weight: 900;
     padding: 10px 15px;
-    display: none;
+    display:flex;
 }
 /* Dropdown meny start */
 .nav-buttons a:hover,
@@ -92,7 +92,7 @@ nav {
 .dropmenu-content { 
     min-width: 160px;
     z-index: 1;
-    display: flex;
+    display: none;
 }
 
 .dropmenu-content a {
@@ -400,17 +400,15 @@ nav {
 .dropmenu-content { 
     display: none;
     font-size: 10px;
- 
-
 }
+
 .nav-buttons a,
 .dropbutton {
-    display: inline-block;
+    display: block;
     font-variant-caps: all-small-caps;
     text-align: center;
     padding: 10px 15px;
     font-size: 1.2rem;
-   
 }
 
 .campus-container {
