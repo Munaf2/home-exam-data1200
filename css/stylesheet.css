@@ -274,65 +274,71 @@ nav {
     gap: 20px; 
     padding: 60px;
 }
-
+/*Gjelder for overskriften til siden*/
 .campus-overskrift {
     font-size: 2.5rem;
 
 }
-
-.campus-intro {
+/*Gjelder for innledningen øverst*/
+.campus-innledning {
     font-size: 1.1rem;
 
 }
-.oversiktstittel {
+/*Gjelder for tittelen til det først avsnittet*/
+.campus-avsnitt-tittel {
     text-align: center;
     
-
 }
-.oversiktsparagraf {
+/*Gjelder det første avsnittet*/
+.campus-avsnitt {
     margin: 0 50px 0 50px;
-    padding: 25px 0 40px 0;
+    padding: 25px 60px 40px 60px;
     font-size: 20px;
 }
-
+/*En grid for å lage en bilde kolasj*/
 .image-wrapper {
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: repeat(2, min-content);
     place-items: center;
-    gap :10px;
-
+    gap: 10px;
+    padding-bottom: 20px;
 }
-
-.stillerom-overskrift, .studiesal-overskrift, .seminar-overskrift, .grupperom-overskrift {
-    padding:30px 0 0 30px;
+/*Gjelder alle områdene på p35 f.eks. grupperom, studiesal...*/
+.område-overskrift {
+    padding: 20px 0 0 80px;
     text-align: left;
 }
+/*Laget margin for å bestemme lengden på setningene*/
 .campus-fasiliteter {
     margin: 30px;
+    padding-left: 45px;
 }
-
-.image-1, .image-2, .image-4, .image-5, .image-7, .image-8, .image-10, .image-11 {
+/*Plasserer bildene øverst*/
+.øvrebilde {
   grid-column: 1 / -1;
   width: 300px;
   height: 200px;
   object-fit: cover;
 }
-
-.image-3, .image-6, .image-9, .image-12 {
+/*Plasserer bildene nederst*/
+.nedrebilde {
   grid-row: 1 / 3;
   grid-column: 3 / 3;
   width: 300px;
   height: 410px;
   object-fit: cover;
 }
-
+/*Gjelder linken nederst*/
 .link-campus    {
     padding: 5px;
     text-align: center;
     margin-bottom: 25px;
 }
-.prøve  {
+/*En grid som gjelder teksten og bildene om de forskjellige områdene.
+  Bildene og teksten blir plassert ved siden av hverandre.
+*/
+.område-container  {
     display: grid;
     grid-template-columns:2fr  2fr;
     grid-template-rows: repeat(2, min-content);
@@ -434,7 +440,7 @@ nav {
 
 }
 
-.prøve  {
+.område-container  {
     display: grid;
     grid-template-columns:  2fr;
     grid-template-rows: repeat(2, min-content);
