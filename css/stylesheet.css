@@ -285,16 +285,17 @@ nav {
 
 }
 /*Gjelder for tittelen til det først avsnittet*/
-.campus-avsnitt-tittel {
+.første-avsnitt-tittel {
     text-align: center;
     
 }
 /*Gjelder det første avsnittet*/
-.campus-avsnitt {
+.første-avsnitt {
     margin: 0 50px 0 50px;
-    padding: 25px 60px 40px 60px;
+    padding: 35px 60px 40px 60px;
     font-size: 20px;
 }
+
 /*En grid for å lage en bilde kolasj*/
 .image-wrapper {
     display: grid;
@@ -329,11 +330,22 @@ nav {
   height: 410px;
   object-fit: cover;
 }
+/*Gjelder siste avsnitt på siden*/
+.siste-avsnitt {
+    margin: 0 50px 0 50px;
+    padding: 65px 60px 30px 60px;
+    font-size: 20px;
+}
+
 /*Gjelder linken nederst*/
 .link-campus    {
     padding: 5px;
     text-align: center;
     margin-bottom: 25px;
+}
+
+.farge-link-campus {
+    color: blue
 }
 /*En grid som gjelder teksten og bildene om de forskjellige områdene.
   Bildene og teksten blir plassert ved siden av hverandre.
