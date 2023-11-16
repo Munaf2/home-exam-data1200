@@ -15,12 +15,8 @@ body {
 a{
     text-decoration: none;
     color: inherit;
-
 }
-a:hover{
-    text-decoration: underline;
 
-}
 
 ul li {
     margin: 10px;
@@ -61,7 +57,6 @@ nav {
 
 .navigations {
     display: flex;
-    flex-direction: column;
     list-style-type: none;
 }
 /* css av lenker til navigering */
@@ -74,7 +69,7 @@ nav {
     font-size: 1.7rem;
     font-weight: 900;
     padding: 10px 15px;
-    display:flex;
+    display:none;
 }
 /* Dropdown meny start */
 .nav-buttons a:hover,
@@ -83,7 +78,7 @@ nav {
 }
 
 .nav-buttons.dropmenu {
-    display: flex; /*fleksibel meny som åpner i samme akse*/
+    display: flex; /*fleksibel meny som åpner sidelengs*/
 }
 
 .nav-logo {
@@ -97,7 +92,7 @@ nav {
 .dropmenu-content { 
     min-width: 160px;
     z-index: 1;
-    display: none;
+    display: flex;
 }
 
 .dropmenu-content a {
@@ -112,7 +107,7 @@ nav {
 }
 
 .dropmenu:hover .dropmenu-content {
-    display: flex; /*menyen legger seg i en rad*/
+    display: flex;
 }
 
 .fa{
