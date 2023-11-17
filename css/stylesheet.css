@@ -71,6 +71,7 @@ nav {
     padding: 10px 15px;
     display:none;
 }
+
 /* Dropdown meny start */
 .nav-buttons a:hover,
 .dropmenu:hover .dropbutton {
@@ -366,6 +367,9 @@ nav {
     margin-top: 20px;
 }
 
+.topical-body{
+    background-color: rgb(227,227, 219);
+}
 .europeanflex-container,
 .termsflex-container {
     display: flex;
