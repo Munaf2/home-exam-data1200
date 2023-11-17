@@ -355,11 +355,11 @@ nav {
     padding-right: 15px;
 }
 
+
+
 /***************/
 /*TOPICAL PAGE*/
 /**************/
-
-
 
 .videotopical{
     text-align: center;
@@ -408,7 +408,14 @@ nav {
     padding-top: 30px;
 }
 
+.link-topical{
+    color: black;
+    text-decoration: underline;
+}
 
+.link-topical:hover{
+    color: blue;
+}
 
 /****Media-Query**/
 /*****TABLETS*****/
