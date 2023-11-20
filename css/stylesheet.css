@@ -362,24 +362,6 @@ nav {
 /*TOPICAL PAGE*/
 /**************/
 
-.videotopical{
-    text-align: center;
-    margin-top: 20px;
-}
-
-.topical-body{
-    background-color: rgb(227,227, 219);
-}
-.europeanflex-container,
-.termsflex-container {
-    display: flex;
-}
-
-.europeanflex-container>div,
-.termsflex-container>div {
-    margin: 10px;
-    padding: 4rem;
-}
 
 .overskriftmartphones {
     font-size: 2.5rem;
@@ -397,29 +379,102 @@ nav {
 .topical-h2{
     font-size: 1.5rem;
 }
-.introtekst {
-    padding-right: 15rem;
+
+.topic-image {
+    padding: 20px;
+    position: relative;
+    height: 550px;
+    overflow: hidden;
 }
 
-.caption {
-    font-size: 0.9rem;
+.topic-image video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.midtdel {
-    margin: 45px;
-    text-align: left;
-    padding: 110px;
-    padding-top: 30px;
+.topic-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #0009;
+    color: white;
+    padding: 35px;
+    border: 3px solid white;
 }
 
-.link-topical{
-    color: black;
-    text-decoration: underline;
+.topic-container h1 {
+    font-weight: 400;
+    font-size: 50px;
+    padding-bottom: 15px;
 }
 
-.link-topical:hover{
-    color: blue;
+.section-smartphone {
+    height: 700px;
+    padding: 40px 30px 0px 30px;
 }
+.topical-body{
+    background-color: rgb(227,227, 219);
+
+}
+
+.funcolumns div h1 {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.smartphone-image{
+	text-align: center;
+	width: 33%;
+	float: left;
+}
+.smartphone-image p{
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.smartphone-image h3{
+	padding-bottom: 15px;
+	margin-top: 15px;
+}
+.smartphone-image img {
+	display: block;
+	width: 100%;
+	height: 200px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.wrapper{
+	max-width: 1200px;
+	width: 95%;
+	margin: 80px auto;
+	background: white;
+	border: 2px solid black;
+	border-radius: 15px;
+}
+.wrapper-columns{
+	margin: 5px 0;
+    display: flex;
+	
+	margin: 5px 0;
+}
+.phone-box {
+    flex: 1;
+	margin: 2px;
+	padding: 10px;
+	transition: 0.3s;
+}
+.box-phone{
+	max-width: 100%;
+	height: auto
+    
+}
+
 
 /****Media-Query**/
 /*****TABLETS*****/
@@ -488,11 +543,9 @@ nav {
 .midtdel{
     padding: 10px;
 }
-
-video{
-    width: 100%;
+.wrapper-columns {
+    flex-flow: column;
 }
-
 }
 
 @media screen and (max-width: 600px) {
