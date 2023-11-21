@@ -18,10 +18,6 @@ a {
   color: inherit;
 }
 
-a:hover{
-    text-decoration: underline;
-}
-
 ul li {
   margin:0.625em;
 }
