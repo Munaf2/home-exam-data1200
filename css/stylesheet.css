@@ -7,12 +7,13 @@
     font-family: 'Nunito', sans-serif;
 
 }
+
 body {
     background-color: white;
     margin: 0 auto;
-  }
-  
-a{
+}
+
+a {
     text-decoration: none;
     color: inherit;
 }
@@ -21,14 +22,14 @@ a{
 ul li {
     margin: 10px;
 }
-  
-p{
+
+p {
     line-height: 1.6;
     text-align: left;
 
 }
 
-img { 
+img {
     /* skalering av alle img */
     width: 100%;
     height: auto;
@@ -43,9 +44,11 @@ nav {
 /****** HEADER *************/
 /**************************/
 .index-header {
-    position: sticky; /* fester header til sin posisjon*/
+    position: sticky;
+    /* fester header til sin posisjon*/
     display: flex;
-    justify-content: space-between; /*forflytter logo og nav på hver sin side*/
+    justify-content: space-between;
+    /*forflytter logo og nav på hver sin side*/
     padding: 10px;
     background-color: #4989CA;
     width: 100%;
@@ -59,6 +62,7 @@ nav {
     display: flex;
     list-style-type: none;
 }
+
 /* css av lenker til navigering */
 /* Dropdown menu css fra: https://www.w3schools.com/Css/tryit.asp?filename=trycss_dropdown_navbar2 */
 
@@ -69,7 +73,7 @@ nav {
     font-size: 1.7rem;
     font-weight: 900;
     padding: 10px 15px;
-    display:none;
+    display: none;
 }
 
 /* Dropdown meny start */
@@ -79,7 +83,8 @@ nav {
 }
 
 .nav-buttons.dropmenu {
-    display: flex; /*fleksibel meny som åpner sidelengs*/
+    display: flex;
+    /*fleksibel meny som åpner sidelengs*/
 }
 
 .nav-logo {
@@ -90,7 +95,7 @@ nav {
     margin-left: 5%;
 }
 
-.dropmenu-content { 
+.dropmenu-content {
     min-width: 160px;
     z-index: 1;
     display: flex;
@@ -111,7 +116,7 @@ nav {
     display: flex;
 }
 
-.fa{
+.fa {
     display: none;
 }
 
@@ -152,7 +157,8 @@ nav {
 }
 
 .sosiale-link:hover,
-.sosiale-link:active,.footer-link:hover,
+.sosiale-link:active,
+.footer-link:hover,
 .footer-link:active {
     color: #ccc;
 }
@@ -166,10 +172,11 @@ nav {
     padding-right: 70px;
 
 }
+
 .adresse-tittel {
     font-size: 25px;
     font-weight: bold;
-    margin:5px 0 2px 0 ;
+    margin: 5px 0 2px 0;
 }
 
 
@@ -177,9 +184,11 @@ nav {
 /*INDEX SIDEN */
 /**************/
 .index-content {
-    display: flex; 
-    flex-direction: column;/* alt innhold ligger etter hverandre i en kolonne */
-    justify-content: center; /*sentrer alt innhold*/
+    display: flex;
+    flex-direction: column;
+    /* alt innhold ligger etter hverandre i en kolonne */
+    justify-content: center;
+    /*sentrer alt innhold*/
     align-items: center;
     padding: 20px;
 }
@@ -203,8 +212,8 @@ nav {
     font-size: 3em;
 }
 
-.index-innlegg{
-    padding:0 15px;
+.index-innlegg {
+    padding: 0 15px;
 }
 
 .headings {
@@ -216,8 +225,9 @@ nav {
 /* fremhevede artikler */
 
 .index-highlights {
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); /*deler området i 3 like kolonner*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*deler området i 3 like kolonner*/
     grid-template-rows: auto;
     border-top: 1px solid #d4d4d4;
     background-color: white;
@@ -226,19 +236,24 @@ nav {
 /* artiklene inni */
 
 .articles {
-    display: grid; 
-    grid-template-columns: repeat(8, 1fr); /*deler området i 8 like kolonner*/
-    grid-template-rows: repeat(6, 1fr); /*deler området i 6 like rader*/
-    margin: 20px 0; /* 20px topp og bunn, 0 for venstre og høyre */
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    /*deler området i 8 like kolonner*/
+    grid-template-rows: repeat(6, 1fr);
+    /*deler området i 6 like rader*/
+    margin: 20px 0;
+    /* 20px topp og bunn, 0 for venstre og høyre */
 }
+
 /* bildene til artiklene */
 .articles-picture {
-    grid-area: 1 / 1 / 7 / 9;  /* dekke radene fra 1 til 7 og kolonnene fra 1 til 8*/
+    grid-area: 1 / 1 / 7 / 9;
+    /* dekke radene fra 1 til 7 og kolonnene fra 1 til 8*/
     display: flex;
-  }
+}
 
 /* for å bildene skal fylle boksene */
-.cover-articles{
+.cover-articles {
     object-fit: cover;
 }
 
@@ -249,6 +264,7 @@ nav {
     opacity: 90%;
     padding: 10px;
 }
+
 /* KART */
 .overskriftkart {
     text-align: center;
@@ -266,25 +282,29 @@ nav {
 /*Laget en grid slik at bilde og innledningsteksten står ved siden av hverandre*/
 .campus-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 20px; 
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     padding: 60px;
 }
+
 /*Gjelder for overskriften til siden*/
 .campus-overskrift {
     font-size: 2.5rem;
 
 }
+
 /*Gjelder for innledningen øverst*/
 .campus-innledning {
     font-size: 1.1rem;
 
 }
+
 /*Gjelder for tittelen til det først avsnittet*/
 .første-avsnitt-tittel {
     text-align: center;
-    
+
 }
+
 /*Gjelder det første avsnittet*/
 .første-avsnitt {
     margin: 0 50px 0 50px;
@@ -301,31 +321,36 @@ nav {
     gap: 10px;
     padding-bottom: 20px;
 }
+
 /*Gjelder alle områdene på p35 f.eks. grupperom, studiesal...*/
 .område-overskrift {
     padding: 20px 0 0 80px;
     text-align: left;
 }
+
 /*Laget margin for å bestemme lengden på setningene*/
 .campus-fasiliteter {
     margin: 30px;
     padding-left: 45px;
 }
+
 /*Plasserer bildene øverst*/
 .øvrebilde {
-  grid-column: 1 / -1;
-  width: 250px;
-  height: 200px;
-  object-fit: cover;
+    grid-column: 1 / -1;
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
 }
+
 /*Plasserer bildene nederst*/
 .nedrebilde {
-  grid-row: 1 / 3;
-  grid-column: 3 / 3;
-  width: 250px;
-  height: 410px;
-  object-fit: cover;
+    grid-row: 1 / 3;
+    grid-column: 3 / 3;
+    width: 250px;
+    height: 410px;
+    object-fit: cover;
 }
+
 /*Gjelder siste avsnitt på siden*/
 .siste-avsnitt {
     margin: 0 50px 0 50px;
@@ -334,7 +359,7 @@ nav {
 }
 
 /*Gjelder linken nederst*/
-.link-campus    {
+.link-campus {
     padding: 5px;
     text-align: center;
     margin-bottom: 25px;
@@ -343,15 +368,16 @@ nav {
 .farge-link-campus {
     color: blue
 }
+
 /*En grid som gjelder teksten og bildene om de forskjellige områdene.
   Bildene og teksten blir plassert ved siden av hverandre.
 */
-.område-container  {
+.område-container {
     display: grid;
-    grid-template-columns:2fr  2fr;
+    grid-template-columns: 2fr 2fr;
     grid-template-rows: repeat(2, min-content);
     place-items: center;
-    gap :10px;
+    gap: 10px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -368,7 +394,8 @@ nav {
     padding: 2rem 2rem;
     text-align: center;
 }
-.topical-head{
+
+.topical-head {
     background-color: rgb(194, 194, 183);
 }
 
@@ -376,7 +403,8 @@ nav {
     font-size: 1.4rem;
     padding-top: 1.7rem;
 }
-.topical-h2{
+
+.topical-h2 {
     font-size: 1.5rem;
 }
 
@@ -405,7 +433,13 @@ nav {
     background-color: #0009;
     color: white;
     padding: 35px;
-    border: 3px solid white;
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+}
+
+.tekstvideo {
+    font-size: 1em;
 }
 
 .topic-container h1 {
@@ -418,56 +452,62 @@ nav {
     height: 700px;
     padding: 40px 30px 0px 30px;
 }
-.topical-body{
-    background-color: rgb(227,227, 219);
+
+.topical-body {
+    background-color: rgb(227, 227, 219);
 
 }
 
-.smartphone-image{
-	text-align: center;
-	width: 33%;
-	float: left;
+.smartphone-image {
+    text-align: center;
+    width: 33%;
+    float: left;
 }
-.smartphone-image p{
+
+.smartphone-image p {
     font-size: 20px;
     padding-left: 20px;
 }
 
-.smartphone-image h3{
-	padding-bottom: 15px;
-	margin-top: 15px;
+.smartphone-image h3 {
+    padding-bottom: 15px;
+    margin-top: 15px;
 }
+
 .smartphone-image img {
-	display: block;
-	width: 100%;
-	height: 200px;
-	cursor: pointer;
-	border-radius: 5px;
+    display: block;
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 5px;
 }
-.wrapper{
-	max-width: 1200px;
-	width: 95%;
-	margin: 80px auto;
-	background: white;
-	border: 2px solid black;
-	border-radius: 15px;
+
+.wrapper {
+    max-width: 1200px;
+    width: 95%;
+    margin: 80px auto;
+    background: white;
+    border: 2px solid black;
+    border-radius: 15px;
 }
-.wrapper-columns{
-	margin: 5px 0;
+
+.wrapper-columns {
+    margin: 5px 0;
     display: flex;
-	
-	margin: 5px 0;
+
+    margin: 5px 0;
 }
+
 .phone-box {
     flex: 1;
-	margin: 2px;
-	padding: 10px;
-	transition: 0.3s;
+    margin: 2px;
+    padding: 10px;
+    transition: 0.3s;
 }
-.box-phone{
-	max-width: 100%;
-	height: auto
-    
+
+.box-phone {
+    max-width: 100%;
+    height: auto
 }
 
 
@@ -476,97 +516,96 @@ nav {
 /*****************/
 @media screen and (max-width: 768px) {
 
-/* navigasjonsbar */
-    
-.dropmenu-content { 
-    display: none;
-    font-size: 10px;
-}
+    /* navigasjonsbar */
 
-.nav-buttons.dropmenu{
-    flex-direction: column;
-}
+    .dropmenu-content {
+        display: none;
+        font-size: 10px;
+    }
 
-.nav-buttons a,
-.dropbutton {
-    display: flex;
-    font-variant-caps: all-small-caps;
-    text-align: center;
-    padding: 10px 15px;
-    font-size: 1.2rem;
-}
+    .nav-buttons.dropmenu {
+        flex-direction: column;
+    }
 
-.dropmenu:hover .dropmenu-content {
-    flex-direction: column;
-    justify-content: center;
-}
+    .nav-buttons a,
+    .dropbutton {
+        display: flex;
+        font-variant-caps: all-small-caps;
+        text-align: center;
+        padding: 10px 15px;
+        font-size: 1.2rem;
+    }
 
-
-/* campus side */
-.campus-container {
-    grid-template-columns: 1fr 1fr; 
-
-}
-
-.område-container  {
-    display: grid;
-    grid-template-columns:  2fr;
-    grid-template-rows: repeat(2, min-content);
-    place-items: center;
-    gap :10px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.campus-container {
-    padding: 40px;
-    grid-template-columns: 1fr; /* Two columns */
- 
-}
-
-/* index-side */
-.index-highlights { 
-    display: flex;
-    flex-direction: column;
-}
-
-/* topical-side */
+    .dropmenu:hover .dropmenu-content {
+        flex-direction: column;
+        justify-content: center;
+    }
 
 
-.wrapper-columns {
-    flex-flow: column;
-}
-.wrapper{
-	max-width: 1000px;
-	width: 95%;
-	margin: 70px auto;
-	
-	border-radius: 15px;
-}
-.smartphone-image {
-    width: 100%;
-    float: none; 
-}
+    /* campus side */
+    .campus-container {
+        grid-template-columns: 1fr 1fr;
 
-.section-smartphone {
- margin-bottom: 690px;
-}
+    }
+
+    .område-container {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: repeat(2, min-content);
+        place-items: center;
+        gap: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .campus-container {
+        padding: 40px;
+        grid-template-columns: 1fr;
+        /* Two columns */
+
+    }
+
+    /* index-side */
+    .index-highlights {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* topical-side */
+
+
+    .wrapper-columns {
+        flex-flow: column;
+    }
+
+    .wrapper {
+        max-width: 1000px;
+        width: 95%;
+        margin: 70px auto;
+
+        border-radius: 15px;
+    }
+
+    .smartphone-image {
+        width: 100%;
+        float: none;
+    }
+
+    .section-smartphone {
+        margin-bottom: 690px;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .campus-intro {
         font-size: 1rem;
-   
+
         padding-left: 5px;
     }
-  
+
     .section-smartphone {
         margin-bottom: 790px;
-       }
-    
-
     }
 
 
-
-    
-
+}
