@@ -394,6 +394,12 @@ nav {
 /*TOPICAL PAGE*/
 /**************/
 
+.headingtopical{
+    font-style: ;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
 .overskriftmartphones {
   font-size: 2.5rem;
   padding: 2rem 2rem;
@@ -435,15 +441,15 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
-  padding: 35px;
+  padding: 6px;
   border-width: 3px;
   border-style: solid;
-  border-color: white;
-  text-align: left;
+  border-color: rgb(194, 194, 183);
+  padding-left: 20px;
 }
 
 .tekstvideo {
-  font-size: 1em;
+    font-style: bold;
 }
 
 .topic-container h1 {
@@ -506,12 +512,12 @@ nav {
   margin: 2px;
   padding: 10px;
   transition: 0.3s;
-  padding-top: 100px;
 }
 
 .box-phone {
   max-width: 100%;
   height: auto;
+  padding-top: 210px;
 }
 
 /****Media-Query**/
