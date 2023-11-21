@@ -429,17 +429,17 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: #0009;
-    color: white;
+    color: black;
     padding: 35px;
     border-width: 3px;
     border-style: solid;
     border-color: white;
+    text-align: left;
 }
 
 .tekstvideo {
     font-size: 1em;
+    
 }
 
 .topic-container h1 {
