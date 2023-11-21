@@ -314,7 +314,22 @@ nav {
   padding: 35px 60px 40px 60px;
   font-size: 20px;
 }
-
+/*En grid som gjelder teksten og bildene om de forskjellige områdene.
+  Bildene og teksten blir plassert ved siden av hverandre.
+*/
+.område-container  {
+    display: grid;
+    grid-template-columns:2fr  2fr;
+    grid-template-rows: repeat(2, min-content);
+    place-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*For å plassere bildeteksten til venste ved bruk av grid*/
+.bilde_tekst {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
 /*En grid for å lage en bilde kolasj*/
 .image-wrapper {
   display: grid;
@@ -369,7 +384,7 @@ nav {
 }
 
 .farge-link-campus {
-  color: blue;
+    color: blue
 }
 
 /*En grid som gjelder teksten og bildene om de forskjellige områdene.
