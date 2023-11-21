@@ -114,9 +114,10 @@ nav {
   background-color: #dae5e9;
 }
 
-.dropmenu:hover{
+.dropmenu:hover .dropmenu-content{
   display: flex;
 }
+
 /* Nedtrekksmeny slutt */
 
 /*********/
@@ -250,9 +251,9 @@ nav {
 /* bildene til artiklene */
 .articles-picture {
   grid-column-start: 1;
-  grid-column-end:7;
+  grid-column-end:9;
   grid-row-start: 1;
-  grid-row-end: 9;
+  grid-row-end: 8;
   /* dekke radene fra 1 til 7 og kolonnene fra 1 til 8*/
   display: flex;
 }
@@ -265,9 +266,9 @@ nav {
 /* artikkel innhold */
 .articles-content {
   grid-column-start: 2;
-  grid-column-end:6;
+  grid-column-end:8;
   grid-row-start: 2;
-  grid-row-end: 8;
+  grid-row-end: 6;
   background-color: white;
   opacity: 90%;
   padding: 10px;
