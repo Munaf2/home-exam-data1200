@@ -288,32 +288,34 @@ nav {
 /*********************************/
 /*Laget en grid slik at bilde og innledningsteksten står ved siden av hverandre*/
 .campus-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    padding: 60px;
 }
-
 /*Gjelder for overskriften til siden*/
 .campus-overskrift {
-  font-size: 2.5rem;
-}
+    font-size: 2.5rem;
 
+}
 /*Gjelder for innledningen øverst*/
 .campus-innledning {
-  font-size: 1.1rem;
-}
+    font-size: 1.1rem;
 
+}
 /*Gjelder for tittelen til det først avsnittet*/
 .første-avsnitt-tittel {
-  text-align: center;
+    text-align: center;
+    
 }
-
 /*Gjelder det første avsnittet*/
 .første-avsnitt {
-  margin: 0 50px 0 50px;
-  padding: 35px 60px 40px 60px;
-  font-size: 20px;
+    margin: 45px;
+    padding-bottom: 35px;
+    padding-left: 60px;
+    padding-right: 40px;
+    padding-top: 30px;
+    font-size: 20px;
 }
 /*En grid som gjelder teksten og bildene om de forskjellige områdene.
   Bildene og teksten blir plassert ved siden av hverandre.
@@ -333,26 +335,25 @@ nav {
 }
 /*En grid for å lage en bilde kolasj*/
 .image-wrapper {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: repeat(2, min-content);
-  place-items: center;
-  gap: 10px;
-  padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: repeat(2, min-content);
+    gap: 10px;
+    padding-bottom: 70px;
+    padding-top: 100px;
 }
-
 /*Gjelder alle områdene på p35 f.eks. grupperom, studiesal...*/
 .område-overskrift {
-  padding: 20px 0 0 80px;
-  text-align: left;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    text-align: left;
 }
-
 /*Laget margin for å bestemme lengden på setningene*/
 .campus-fasiliteter {
-  margin: 30px;
-  padding-left: 45px;
+    margin: 30px;
+    padding-left: 45px;
+    font-size: 17px
 }
-
 /*Plasserer bildene øverst*/
 .øvrebilde {
   grid-column: 1 / -1;
@@ -360,7 +361,6 @@ nav {
   height: 200px;
   object-fit: cover;
 }
-
 /*Plasserer bildene nederst*/
 .nedrebilde {
   grid-row: 1 / 3;
@@ -369,37 +369,28 @@ nav {
   height: 410px;
   object-fit: cover;
 }
-
 /*Gjelder siste avsnitt på siden*/
 .siste-avsnitt {
-  margin: 0 50px 0 50px;
-  padding: 65px 60px 30px 60px;
-  font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 60px;
+    padding-right: 30px;
+    font-size: 17px;
 }
 
 /*Gjelder linken nederst*/
-.link-campus {
-  padding: 5px;
-  text-align: center;
-  margin-bottom: 25px;
+.link-campus    {
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 25px;
 }
-
+/*Gjør at linken blir synlig*/
 .farge-link-campus {
     color: blue
 }
 
-/*En grid som gjelder teksten og bildene om de forskjellige områdene.
-  Bildene og teksten blir plassert ved siden av hverandre.
-*/
-.område-container {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: repeat(2, min-content);
-  place-items: center;
-  gap: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
 /***************/
 /*TOPICAL PAGE*/
