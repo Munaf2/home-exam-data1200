@@ -329,6 +329,7 @@ nav {
 .bilde_tekst {
     grid-column-start: 1;
     grid-column-end: 4;
+    margin:0;
 }
 /*En grid for å lage en bilde kolasj*/
 .image-wrapper {
@@ -336,13 +337,14 @@ nav {
     grid-template-columns: 2fr 2fr;
     grid-template-rows: repeat(2, min-content);
     gap: 10px;
-    padding-top: 65px;
+    padding-top: 45px;
     margin: 0px;
 }
 /*Gjelder alle områdene på p35 f.eks. grupperom, studiesal...*/
 .område-overskrift {
     padding-left: 80px;
     text-align: left;
+    padding-top: 60px;
 }
 /*Laget margin for å bestemme lengden på setningene*/
 .campus-fasiliteter {
