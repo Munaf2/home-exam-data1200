@@ -441,7 +441,7 @@ nav {
   background-color: rgb(227, 227, 219);
 }
 
-.topicallinks{
+.topicallinks, .linksaccessebility{
     text-decoration: underline;
 }
 
