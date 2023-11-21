@@ -201,7 +201,11 @@ nav {
 
 .index-innlegg {
     padding: 0 0.9em;
+}
 
+.new-tabs-headings{
+    text-align: left;
+    font-size: 1.5em;
 }
 
 .headings {
@@ -248,11 +252,11 @@ nav {
 
 /* artikkel innhold */
 .articles-content {
-    grid-column: 2 / 8;
-    grid-row: 2 / 6;
-  background-color: white;
-  opacity: 90%;
-  padding: 0.625em;
+   grid-column: 2 / 8;
+   grid-row: 2 / 6;
+   background-color: white;
+   opacity: 90%;
+   padding: 0.625em;
 }
 
 /* KART */
@@ -438,6 +442,10 @@ nav {
 
 .topical-body {
   background-color: rgb(227, 227, 219);
+}
+
+.topicallinks{
+    text-decoration: underline;
 }
 
 .smartphone-image {
