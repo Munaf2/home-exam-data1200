@@ -336,7 +336,8 @@ nav {
     grid-template-columns: 2fr 2fr;
     grid-template-rows: repeat(2, min-content);
     gap: 10px;
-    padding-top: 80px;
+    padding-top: 65px;
+    margin: 0px;
 }
 /*Gjelder alle områdene på p35 f.eks. grupperom, studiesal...*/
 .område-overskrift {
