@@ -426,15 +426,13 @@ nav {
 
 .topic-container {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
-    padding: 35px;
-    border-width: 3px;
+    padding-left: 30px;
+    border-width: 2px;
     border-style: solid;
-    border-color: white;
-    text-align: left;
+    border-color: rgb(194, 194, 183);
 }
 
 .tekstvideo {
