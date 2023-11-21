@@ -22,7 +22,7 @@ a:hover{
 }
 
 ul li {
-  margin:0.625em;
+  margin: 10px;
 }
 
 p {
@@ -71,7 +71,10 @@ nav {
   font-variant-caps: all-small-caps;
   font-size: 1.7rem;
   font-weight: 900;
-  padding: 10px 15px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: none;
 }
 
@@ -206,8 +209,10 @@ nav {
 }
 
 .index-innlegg {
-    padding: 0 15px;
-
+  padding-top: 0;
+  padding-bottom:0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .headings {
@@ -223,7 +228,9 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   /*deler området i 3 like kolonner*/
   grid-template-rows: auto;
-  border-top: 1px solid #d4d4d4;
+  border-top-width: 1px;
+  border-top-style:  solid;
+  border-top-color: #d4d4d4;
   background-color: white;
 }
 
@@ -235,14 +242,18 @@ nav {
   /*deler området i 8 like kolonner*/
   grid-template-rows: repeat(6, 1fr);
   /*deler området i 6 like rader*/
-  margin: 20px;
-
+  margin-top: 20px;
+  margin-bottom:20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* bildene til artiklene */
 .articles-picture {
-    grid-column: 1 / 9;
-    grid-row: 1 / 8; 
+  grid-column-start: 1;
+  grid-column-end:9;
+  grid-row-start: 1;
+  grid-row-end: 8;
   /* dekke radene fra 1 til 7 og kolonnene fra 1 til 8*/
   display: flex;
 }
@@ -254,8 +265,10 @@ nav {
 
 /* artikkel innhold */
 .articles-content {
-    grid-column: 2 / 8;
-    grid-row: 2 / 6;
+  grid-column-start: 2;
+  grid-column-end:8;
+  grid-row-start: 2;
+  grid-row-end: 6;
   background-color: white;
   opacity: 90%;
   padding: 10px;
@@ -279,8 +292,6 @@ nav {
     grid-template-columns: 1fr 1fr; 
     gap: 20px; 
     padding: 60px;
-    place-items: center; /* Sentrerer både vertikalt og horisontalt */
-
 }
 /*Gjelder for overskriften til siden*/
 .campus-overskrift {
@@ -289,7 +300,7 @@ nav {
 }
 /*Gjelder for innledningen øverst*/
 .campus-innledning {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
 
 }
 /*Gjelder for tittelen til det først avsnittet*/
@@ -300,8 +311,9 @@ nav {
 /*Gjelder det første avsnittet*/
 .første-avsnitt {
     margin: 45px;
-    padding: 0 40px 0 60px;
-    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 40px;
+    font-size: 1.1rem;
 }
 /*En grid som gjelder teksten og bildene om de forskjellige områdene.
   Bildene og teksten blir plassert ved siden av hverandre.
@@ -310,12 +322,13 @@ nav {
     display: grid;
     grid-template-columns:2fr  2fr;
     place-items: center;
-    padding: 0 15px;
-
+    padding-left: 15px;
+    padding-right: 15px;
 }
 /*For å plassere bildeteksten til venste ved bruk av grid*/
 .bilde_tekst {
-    grid-column: 1 / 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
     margin:0;
 }
 /*En grid for å lage en bilde kolasj*/
@@ -329,15 +342,15 @@ nav {
 }
 /*Gjelder alle områdene på p35 f.eks. grupperom, studiesal...*/
 .område-overskrift {
+    padding-left: 80px;
     text-align: left;
-    padding: 60px 0 0 80px;
-
+    padding-top: 60px;
 }
 /*Laget margin for å bestemme lengden på setningene*/
 .campus-fasiliteter {
     margin: 30px;
     padding-left: 45px;
-    font-size: 17px
+    font-size: 1rem
 }
 /*Plasserer bildene øverst*/
 .øvrebilde {
@@ -354,18 +367,11 @@ nav {
   height: 410px;
   object-fit: cover;
 }
-/*Gjelder siste avsnitt på siden*/
-.siste-avsnitt {
-    margin: 0 50px;
-    padding: 5px 30px 5px 60px;
-    font-size: 17px;
-}
 
 /*Gjelder linken nederst*/
 .link-campus    {
     padding: 5px;
     text-align: center;
-    margin-bottom: 25px;
 }
 /*Gjør at linken blir synlig*/
 .farge-link-campus {
@@ -375,9 +381,11 @@ nav {
 /***************/
 /*TOPICAL PAGE*/
 /**************/
+
 .headingtopical{
-  font-size: 1.5em;
-  padding: 10px;
+    font-style: ;
+    font-size: 1.5em;
+    padding: 10px;
 }
 
 .overskriftmartphones {
@@ -429,8 +437,7 @@ nav {
 }
 
 .tekstvideo {
-  font-size: 1em;
-  font-weight: bold;
+    font-style: bold;
 }
 
 .topic-container h1 {
@@ -493,12 +500,12 @@ nav {
   margin: 2px;
   padding: 10px;
   transition: 0.3s;
-  padding-top: 100px;
 }
 
 .box-phone {
   max-width: 100%;
   height: auto;
+  padding-top: 210px;
 }
 
 /****Media-Query**/
@@ -520,7 +527,10 @@ nav {
     display: flex;
     font-variant-caps: all-small-caps;
     text-align: center;
-    padding: 10px 15px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 15;
+    padding-right: 15px;
     font-size: 1.2rem;
   }
 
@@ -540,7 +550,8 @@ nav {
     grid-template-rows: repeat(2, min-content);
     place-items: center;
     gap: 10px;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .campus-container {
@@ -582,6 +593,7 @@ nav {
 @media screen and (max-width: 600px) {
   .campus-intro {
     font-size: 1rem;
+
     padding-left: 5px;
   }
 
@@ -589,4 +601,3 @@ nav {
     margin-bottom: 790px;
   }
 }
-
