@@ -311,10 +311,8 @@ nav {
 /*Gjelder det første avsnittet*/
 .første-avsnitt {
     margin: 45px;
-    padding-bottom: 35px;
     padding-left: 60px;
     padding-right: 40px;
-    padding-top: 30px;
     font-size: 20px;
 }
 /*En grid som gjelder teksten og bildene om de forskjellige områdene.
@@ -323,7 +321,6 @@ nav {
 .område-container  {
     display: grid;
     grid-template-columns:2fr  2fr;
-    grid-template-rows: repeat(2, min-content);
     place-items: center;
     padding-left: 15px;
     padding-right: 15px;
@@ -339,12 +336,10 @@ nav {
     grid-template-columns: 2fr 2fr;
     grid-template-rows: repeat(2, min-content);
     gap: 10px;
-    padding-bottom: 70px;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 /*Gjelder alle områdene på p35 f.eks. grupperom, studiesal...*/
 .område-overskrift {
-    padding-bottom: 10px;
     padding-left: 80px;
     text-align: left;
 }
