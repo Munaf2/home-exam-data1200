@@ -423,11 +423,6 @@ nav {
 
 }
 
-.funcolumns div h1 {
-    font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .smartphone-image{
 	text-align: center;
 	width: 33%;
@@ -536,15 +531,24 @@ nav {
 
 /* topical-side */
 
-.europeanflex-container,
-.termsflex-container {
-   flex-direction: column;
-}
-.midtdel{
-    padding: 10px;
-}
+
 .wrapper-columns {
     flex-flow: column;
+}
+.wrapper{
+	max-width: 1000px;
+	width: 95%;
+	margin: 70px auto;
+	
+	border-radius: 15px;
+}
+.smartphone-image {
+    width: 100%;
+    float: none; 
+}
+
+.section-smartphone {
+ margin-bottom: 690px;
 }
 }
 
@@ -555,6 +559,9 @@ nav {
         padding-left: 5px;
     }
   
+    .section-smartphone {
+        margin-bottom: 790px;
+       }
     
 
     }
