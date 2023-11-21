@@ -1,62 +1,62 @@
-
 /*************/
 /* Generelt*/
 /************/
 * {
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
 }
 
 body {
-  background-color: white;
-  margin: 0 auto;
+    background-color: white;
+    margin: 0 auto;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 ul li {
-  margin:0.625em;
+    margin: 0.625em;
 }
 
 p {
-  line-height: 1.6;
-  text-align: left;
+    line-height: 1.6;
+    text-align: left;
 }
 
 img {
-  /* skalering av alle img */
-  width: 100%;
-  height: auto;
+    /* skalering av alle img */
+    width: 100%;
+    height: auto;
 }
 
 nav {
-  padding: 0.2em;
+    padding: 0.2em;
 }
 
 /**************************/
 /****** HEADER *************/
 /**************************/
 .index-header {
-  position: sticky;
-  /* fester header til sin posisjon*/
-  display: flex;
-  justify-content: space-between;
-  /*forflytter logo og nav på hver sin side*/
-  padding: 0.2em;
-  background-color: #4989ca;
-  width: 100%;
-  top: 0;
-  z-index: 2; /*flytter header øverst foran alt innhold*/
+    position: sticky;
+    /* fester header til sin posisjon*/
+    display: flex;
+    justify-content: space-between;
+    /*forflytter logo og nav på hver sin side*/
+    padding: 0.2em;
+    background-color: #4989ca;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    /*flytter header øverst foran alt innhold*/
 }
 
 /*navigasjonsbar*/
 .navigations {
-  display: flex;
-  
+    display: flex;
+
 }
 
 /* css av lenker til navigering */
@@ -64,52 +64,52 @@ nav {
 
 .nav-buttons a,
 .dropbutton {
-  color: black;
-  font-variant-caps: all-small-caps;
-  font-size: 1.7rem;
-  font-weight: 900;
-  padding: 0.6em 0.9em;
-  display: none;
+    color: black;
+    font-variant-caps: all-small-caps;
+    font-size: 1.7rem;
+    font-weight: 900;
+    padding: 0.6em 0.9em;
+    display: none;
 }
 
 /* Nedtrekksmeny start */
 .nav-buttons a:hover,
 .dropmenu:hover .dropbutton {
-  color: #312e2e;
+    color: #312e2e;
 }
 
 .nav-buttons.dropmenu {
-  display: flex;
-  /*fleksibel meny som åpner sidelengs*/
+    display: flex;
+    /*fleksibel meny som åpner sidelengs*/
 }
 
 .nav-logo {
-  /*utforming av oslomet-logo*/
-  width: 5em;
-  height: auto;
-  align-self: center;
-  margin-left: 5%;
+    /*utforming av oslomet-logo*/
+    width: 5em;
+    height: auto;
+    align-self: center;
+    margin-left: 5%;
 }
 
 /* utforming av nedtrekksmenu*/
 .dropmenu-content {
-  z-index: 1;
-  display: flex;
+    z-index: 1;
+    display: flex;
 }
 
 /*lenker inni nedtrekksmenyen*/
 .dropmenu-content a {
-  color: black;
-  padding: 0.7em 1em;
-  display: block;
+    color: black;
+    padding: 0.7em 1em;
+    display: block;
 }
 
 .dropmenu-content a:hover {
-  background-color: #dae5e9;
+    background-color: #dae5e9;
 }
 
-.dropmenu:hover .dropmenu-content{
-  display: flex;
+.dropmenu:hover .dropmenu-content {
+    display: flex;
 }
 
 /* Nedtrekksmeny slutt */
@@ -119,149 +119,149 @@ nav {
 /*********/
 
 .footer {
-  border-top: 0.063em solid #eee;
-  padding: 0.2em 0;
-  background-color: #4989ca;
+    border-top: 0.063em solid #eee;
+    padding: 0.2em 0;
+    background-color: #4989ca;
 }
 
 .container-footer {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 /*Dette er logo kolonnen (den venstre kolonnnen)*/
 .logo-kolonne {
-  display: flex;
-  flex-direction: column;
-  padding: 0 3em;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3em;
 }
 
 .sosiale-medier {
-  list-style: none;
-  display: flex;
+    list-style: none;
+    display: flex;
 }
 
 .sosiale-link:hover,
 .sosiale-link:active,
 .footer-link:hover,
 .footer-link:active {
-  color: #ccc;
+    color: #ccc;
 }
 
 /**Dette er kontakt oss kolonnen (venstre kolonne**/
 
 .adresse-kolonne {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-right: 4.3em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-right: 4.3em;
 }
 
 .adresse-tittel {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin: 0.3em 0 0.1em 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.3em 0 0.1em 0;
 }
 
 /**************/
 /*INDEX SIDEN */
 /**************/
 .index-content {
-  display: flex;
-  flex-direction: column;
-  /* alt innhold ligger etter hverandre i en kolonne */
-  justify-content: center;
-  /*sentrer alt innhold*/
-  align-items: center;
-  padding: 1.25em;
+    display: flex;
+    flex-direction: column;
+    /* alt innhold ligger etter hverandre i en kolonne */
+    justify-content: center;
+    /*sentrer alt innhold*/
+    align-items: center;
+    padding: 1.25em;
 }
 
 .index-image {
-  width: 75%;
-  flex: 1;
+    width: 75%;
+    flex: 1;
 }
 
 .index-intro {
-  flex: 1;
-  width: 75%;
-  border: 0.063em solid #d4d4d4;
-  border-top: none ; 
-  background-color: white;
+    flex: 1;
+    width: 75%;
+    border: 0.063em solid #d4d4d4;
+    border-top: none;
+    background-color: white;
 }
 
 .index-intro h1 {
-  background-color: #4989ca;
-  text-align: center;
-  font-size: 3em;
+    background-color: #4989ca;
+    text-align: center;
+    font-size: 3em;
 }
 
 .index-innlegg {
     padding: 0 0.9em;
 }
 
-.new-tabs-headings{
+.new-tabs-headings {
     text-align: left;
     font-size: 1.5em;
 }
 
 .headings {
-  flex: 1;
-  width: 75%;
-  padding-top: 1.25em;
+    flex: 1;
+    width: 75%;
+    padding-top: 1.25em;
 }
 
 /* fremhevede artikler */
 
 .index-highlights {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /*deler området i 3 like kolonner*/
-  grid-template-rows: auto;
-  border-top: 0.063em solid #d4d4d4;
-  background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*deler området i 3 like kolonner*/
+    grid-template-rows: auto;
+    border-top: 0.063em solid #d4d4d4;
+    background-color: white;
 }
 
 /* artiklene inni */
 
 .articles {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  /*deler området i 8 like kolonner*/
-  grid-template-rows: repeat(6, 1fr);
-  /*deler området i 6 like rader*/
-  margin: 1.25em;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    /*deler området i 8 like kolonner*/
+    grid-template-rows: repeat(6, 1fr);
+    /*deler området i 6 like rader*/
+    margin: 1.25em;
 
 }
 
 /* bildene til artiklene */
 .articles-picture {
     grid-column: 1 / 9;
-    grid-row: 1 / 8; 
-  /* dekke radene fra 1 til 7 og kolonnene fra 1 til 8*/
-  display: flex;
+    grid-row: 1 / 8;
+    /* dekke radene fra 1 til 7 og kolonnene fra 1 til 8*/
+    display: flex;
 }
 
 /* for å bildene skal fylle boksene */
 .cover-articles {
-  object-fit: cover;
+    object-fit: cover;
 }
 
 /* artikkel innhold */
 .articles-content {
-   grid-column: 2 / 8;
-   grid-row: 2 / 6;
-   background-color: white;
-   opacity: 90%;
-   padding: 0.625em;
+    grid-column: 2 / 8;
+    grid-row: 2 / 6;
+    background-color: white;
+    opacity: 90%;
+    padding: 0.625em;
 }
 
 /* KART */
 .overskriftkart {
-  text-align: center;
+    text-align: center;
 }
 
 .kart {
-  padding: 3em;
+    padding: 3em;
 }
 
 /*********************************/
@@ -270,48 +270,56 @@ nav {
 /*Laget en grid slik at bilde og innledningsteksten står ved siden av hverandre*/
 .campus-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     gap: 1.25em;
     padding: 3.75em;
-    place-items: center; /* Sentrerer både vertikalt og horisontalt */
+    place-items: center;
+    /* Sentrerer både vertikalt og horisontalt */
 
 }
+
 /*Gjelder for overskriften til siden*/
 .campus-overskrift {
     font-size: 2.5em;
 
 }
+
 /*Gjelder for innledningen øverst*/
 .campus-innledning {
     font-size: 1.1em;
 
 }
+
 /*Gjelder for tittelen til det først avsnittet*/
 .første-avsnitt-tittel {
     text-align: center;
-    
+
 }
+
 /*Gjelder det første avsnittet*/
 .første-avsnitt {
     margin: 2.8em;
     padding: 0 2.5em 0 3.75em;
     font-size: 1.25em;
 }
+
 /*En grid som gjelder teksten og bildene om de forskjellige områdene.
   Bildene og teksten blir plassert ved siden av hverandre.
 */
-.område-container  {
+.område-container {
     display: grid;
-    grid-template-columns:2fr  2fr;
+    grid-template-columns: 2fr 2fr;
     place-items: center;
     padding: 0 0.9em;
 
 }
+
 /*For å plassere bildeteksten til venste ved bruk av grid*/
 .bilde_tekst {
     grid-column: 1 / 4;
-    margin:0;
+    margin: 0;
 }
+
 /*En grid for å lage en bilde kolasj*/
 .image-wrapper {
     display: grid;
@@ -321,33 +329,37 @@ nav {
     padding-top: 2.8em;
     margin: 0em;
 }
+
 /*Gjelder alle områdene på p35 f.eks. grupperom, studiesal...*/
 .område-overskrift {
     text-align: left;
     padding: 3.75em 0 0 5em
-
 }
+
 /*Laget margin for å bestemme lengden på setningene*/
 .campus-fasiliteter {
-    margin:1.87em;
+    margin: 1.87em;
     padding-left: 2.81em;
     font-size: 1.1em;
 }
+
 /*Plasserer bildene øverst*/
 .øvrebilde {
-  grid-column: 1 / -1;
-  width: 15.6em;
-  height: 12.5em;
-  object-fit: cover;
+    grid-column: 1 / -1;
+    width: 15.6em;
+    height: 12.5em;
+    object-fit: cover;
 }
+
 /*Plasserer bildene nederst*/
 .nedrebilde {
-  grid-row: 1 / 3;
-  grid-column: 3 / 3;
-  width:15.6em;
-  height: 25.6em;
-  object-fit: cover;
+    grid-row: 1 / 3;
+    grid-column: 3 / 3;
+    width: 15.6em;
+    height: 25.6em;
+    object-fit: cover;
 }
+
 /*Gjelder siste avsnitt på siden*/
 .siste-avsnitt {
     margin: 0 3.1em;
@@ -356,11 +368,12 @@ nav {
 }
 
 /*Gjelder linken nederst*/
-.link-campus    {
+.link-campus {
     padding: 0.3em;
     text-align: center;
     margin-bottom: 1.6em;
 }
+
 /*Gjør at linken blir synlig*/
 .farge-link-campus {
     color: blue
@@ -369,233 +382,234 @@ nav {
 /***************/
 /*TOPICAL PAGE*/
 /**************/
-.headingtopical{
-  font-size: 1.2em;
-  padding-top: 1em;
-  padding-left: 30px;
+.headingtopical {
+    font-size: 1.2em;
+    padding-top: 1em;
+    padding-left: 30px;
 }
 
 .overskriftmartphones {
-  font-size: 2.5rem;
-  padding: 2rem 2rem;
-  text-align: center;
+    font-size: 2.5rem;
+    padding: 2rem 2rem;
+    text-align: center;
 }
 
 .topical-head {
-  background-color: rgb(194, 194, 183);
+    background-color: rgb(194, 194, 183);
 }
 
 .topical-p {
-  font-size: 1.4rem;
-  padding-top: 1.7em;
+    font-size: 1.4rem;
+    padding-top: 1.7em;
 }
 
 .topical-h2 {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .topic-image {
-  padding: 1.25em;
-  position: relative;
-  height: 34.4em;
-  overflow: hidden;
+    padding: 1.25em;
+    position: relative;
+    height: 34.4em;
+    overflow: hidden;
 }
 
 .topic-image video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .topic-container {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  padding: 0.4em;
-  border: 1em solid rgb(194, 194, 183);
-  padding-left: 1.25em;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding: 0.4em;
+    border: 1em solid rgb(194, 194, 183);
+    padding-left: 1.25em;
 }
 
 .tekstvideo {
-  font-size: 1em;
-  font-weight: bold;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 .topic-container h1 {
-  font-weight: 400;
-  font-size: 3.2em;
-  padding-bottom: 1em;
+    font-weight: 400;
+    font-size: 3.2em;
+    padding-bottom: 1em;
 }
 
 .section-smartphone {
-  height: 43.75em; 
-  padding: 2.5em 1.9em 0 2em;
+    height: 43.75em;
+    padding: 2.5em 1.9em 0 2em;
 }
 
 .topical-body {
-  background-color: rgb(227, 227, 219);
+    background-color: rgb(227, 227, 219);
 }
 
-.topicallinks, .linksaccessebility{
+.topicallinks,
+.linksaccessebility {
     text-decoration: underline;
 }
 
 .smartphone-image {
-  text-align: center;
-  width: 33%;
-  float: left;
+    text-align: center;
+    width: 33%;
+    float: left;
 }
 
 .smartphone-image p {
-  font-size:1.25em;
-  padding-left: 1.25em;
+    font-size: 1.25em;
+    padding-left: 1.25em;
 }
 
 .smartphone-image h3 {
-  padding-bottom: 0.9em;
-  margin-top: 0.9em;
+    padding-bottom: 0.9em;
+    margin-top: 0.9em;
 }
 
 .smartphone-image img {
-  display: block;
-  width: 100%;
-  height: 12.5em;
-  cursor: pointer;
-  border-radius: 0.3em;
+    display: block;
+    width: 100%;
+    height: 12.5em;
+    cursor: pointer;
+    border-radius: 0.3em;
 }
 
 .wrapper {
-  max-width: 75em;
-  width: 95%;
-  margin: 5em auto;
-  background: white;
-  border: 0.125em solid black;
-  border-radius: 0.9em;
+    max-width: 75em;
+    width: 95%;
+    margin: 5em auto;
+    background: white;
+    border: 0.125em solid black;
+    border-radius: 0.9em;
 }
 
 .wrapper-columns {
-  margin: 0.3em 0;
-  display: flex;
-  margin: 0.3em 0;
+    margin: 0.3em 0;
+    display: flex;
+    margin: 0.3em 0;
 }
 
 .phone-box {
-  flex: 1;
-  margin: 0.125em;
-  padding: 0.6em; 
-  transition: 0.3s;
-  padding-top: 6.25em; 
+    flex: 1;
+    margin: 0.125em;
+    padding: 0.6em;
+    transition: 0.3s;
+    padding-top: 6.25em;
 }
 
 .box-phone {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 /****Media-Query**/
 /*****TABLETS*****/
 /*****************/
 @media screen and (max-width: 55em) {
-  /* navigasjonsbar */
-  .dropmenu-content {
-    display: none;
-    font-size: 0.6em;
-  }
 
-  .nav-buttons.dropmenu {
-    flex-direction: column;
-  }
+    /* navigasjonsbar */
+    .dropmenu-content {
+        display: none;
+        font-size: 0.6em;
+    }
 
-  .nav-buttons a,
-  .dropbutton {
-    display: flex;
-    font-variant-caps: all-small-caps;
-    text-align: center;
-    padding: 0.6em 0.9em;
-    font-size: 1.2rem;
-  }
+    .nav-buttons.dropmenu {
+        flex-direction: column;
+    }
 
-  .dropmenu:hover .dropmenu-content {
-    flex-direction: column;
-    justify-content: center;
-  }
+    .nav-buttons a,
+    .dropbutton {
+        display: flex;
+        font-variant-caps: all-small-caps;
+        text-align: center;
+        padding: 0.6em 0.9em;
+        font-size: 1.2rem;
+    }
 
-  /* campus side */
-  .campus-container {
-    grid-template-columns: 1fr 1fr;
-  }
+    .dropmenu:hover .dropmenu-content {
+        flex-direction: column;
+        justify-content: center;
+    }
 
-  .område-container {
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: repeat(2, min-content);
-    place-items: center;
-    gap: 0.625em;
-    padding: 0 0.938em;
-  }
+    /* campus side */
+    .campus-container {
+        grid-template-columns: 1fr 1fr;
+    }
 
-  .campus-container {
-    padding: 2.5em;
-    grid-template-columns: 1fr;
-    /* Two columns */
-  }
+    .område-container {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: repeat(2, min-content);
+        place-items: center;
+        gap: 0.625em;
+        padding: 0 0.938em;
+    }
 
-  /* index-side */
-  .index-highlights {
-    display: flex;
-    flex-direction: column;
-  }
+    .campus-container {
+        padding: 2.5em;
+        grid-template-columns: 1fr;
+        /* Two columns */
+    }
 
-  /* topical-side */
+    /* index-side */
+    .index-highlights {
+        display: flex;
+        flex-direction: column;
+    }
 
-  .wrapper-columns {
-    flex-flow: column;
-  }
+    /* topical-side */
 
-  .wrapper {
-    max-width: 62.5rem;
-    width: 95%;
-    margin: 4.3rem auto;
+    .wrapper-columns {
+        flex-flow: column;
+    }
 
-    border-radius:0.9eem;
-  }
+    .wrapper {
+        max-width: 62.5rem;
+        width: 95%;
+        margin: 4.3rem auto;
 
-  .smartphone-image {
-    width: 100%;
-    float: none;
-  }
+        border-radius: 0.9eem;
+    }
 
-  .section-smartphone {
-    margin-bottom: 43rem;
-  }
-  .phone-box{
-    padding-top: 2.25em; 
+    .smartphone-image {
+        width: 100%;
+        float: none;
+    }
 
-  }
+    .section-smartphone {
+        margin-bottom: 43rem;
+    }
+
+    .phone-box {
+        padding-top: 2.25em;
+
+    }
 }
 
 @media screen and (max-width: 37.5em) {
-  .campus-intro {
-    font-size: 1rem;
-    padding-left: 0.3em;
-  }
+    .campus-intro {
+        font-size: 1rem;
+        padding-left: 0.3em;
+    }
 
-  .section-smartphone {
-    margin-bottom: 49.3em
-  }
+    .section-smartphone {
+        margin-bottom: 49.3em
+    }
 }
 
 /**MOBIL**/
 @media screen and (max-width: 27em) {
     .section-smartphone {
         margin-bottom: 65rem;
-      }
-     
+    }
+
 }
-
-
