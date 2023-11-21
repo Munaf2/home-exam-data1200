@@ -123,7 +123,7 @@ nav {
 /*********/
 
 .footer {
-  border-top: 1px solid #eee;
+  border-top: 0.063em solid #eee;
   padding: 0.2em 0;
   background-color: #4989ca;
 }
@@ -495,7 +495,7 @@ nav {
 /****Media-Query**/
 /*****TABLETS*****/
 /*****************/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   /* navigasjonsbar */
   .dropmenu-content {
     display: none;
@@ -511,7 +511,7 @@ nav {
     display: flex;
     font-variant-caps: all-small-caps;
     text-align: center;
-    padding: 10px 15px;
+    padding: 0.6em 0.9em;
     font-size: 1.2rem;
   }
 
@@ -570,7 +570,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5em) {
   .campus-intro {
     font-size: 1rem;
     padding-left: 0.3em;
