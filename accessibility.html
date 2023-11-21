@@ -68,7 +68,7 @@
                     Vi har utviklet denne nettsiden med tanke på universell utforming. Tydelig titler og avsnitt er nøye organisert.
                     I designprosessen for sidene utarbeidet vår gruppe først en layout for det visuelle uttrykket, 
                     etterfulgt av utvikling av CSS for å realisere designet. Hver side er inndelt i tre hoveddeler, en header, innhold og en footer.
-                    navigasjonen har et enkel design, med logoen plassert på den ene siden og nedtrykksmeny på den andre.
+                    Nav har et enkel design, med logoen plassert på den ene siden og nedtrykksmeny på den andre.
                     innholdet er strukturert i klonner og er inspirert av blogginnlegg.
                     </p>
                     <p class="campus-intro">
@@ -79,7 +79,7 @@
 
                     </p>
                    <p class="campus-intro">
-                    Det å bruke nettsiden vår brukervennlig, og det er tydelig hvilken side man befinner seg på. 
+                    Nettsiden vår brukervennlig, og det er tydelig hvilken side man befinner seg på. 
                     Navigasjonen forenkler betydelig og det er mulig å navigere rundt ved hjelp av tastaturet på grunn av tabindex i overskrifter og
                     avsnitter. I tillegg har vi gjort slik
                     at naven vår er fixed på grunn av det blir mer effektivt å navigere og dette gjør siden vår enda mer tilgjenglig.
@@ -101,13 +101,13 @@
         Denne hjalp oss å finne feil i koden og ting som var undøvendig å ha med.  
     </p>
         <p class="campus-intro">
-            For å sikre tilgjengeligheten brukte vi <a href="https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?pli=1">Wave Evaluation Tool</a>.
-          Dette verktøyet evaluerer om nettsiden vår er tilgjengelig for alle brukere.Under testingen ble det avdekket noen feil meldinger, dette kom av ikonene vi har på footeren.
-         testen viste at "linken ikke hadde tekst". For å løse dette probleme ved ålegge til beskrivende tekst til lenkene som inneholdt ikonene i footeren. Dette bidrar ikke bare rette opp
-         tilgjengelighetsfeilen, men det gir også bedre informasjon til brukere som bruker skjermlesere eller annet hjelpeteknologi.
+        For å sikre tilgjengeligheten brukte vi <a href="https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?pli=1">Wave Evaluation Tool</a>.
+        Dette verktøyet evaluerer om nettsiden vår er tilgjengelig for alle brukere.Under testingen ble det avdekket noen feil meldinger, dette kom av ikonene vi har på footeren.
+        Testen viste at "linken ikke hadde tekst". For å løse dette probleme la vi inn "aria-label", den gir en beskrivende tekst som skjermleseren kan lese opp. 
+        Dette bidrar ikke bare å rette opp tilgjengelighetsfeilen, men også gir også bedre informasjon til brukere som bruker skjermlesere eller annet hjelpeteknologi.
     </p>
 </div>
-    <img class="campus-img" src="images/valedering.png" alt="">
+    <img class="campus-img" src="images/valedering.png" alt="Bilde av testen av siden">
 
 </div>       
         </section>
@@ -117,28 +117,28 @@
         <div class="container-footer">
             <div class="logo-kolonne">
                 <a href="#" class="logo-footer">
-                    <img class="nav-logo" alt="OsloMet logo" src="images/logo_oslomet_gul.png">
+                    <img class="nav-logo" alt="OsloMet logo" src="images/svart_logo_oslomet.png">
                 </a>
 
                 <ul class="sosiale-medier">
                     <li>
-                        <a class="sosiale-link" href="https://www.facebook.com/oslomet/">
+                        <a class="sosiale-link" href="https://www.facebook.com/oslomet/"  aria-label="Ikon til facebook">
                             <i class="fab fa-facebook"></i> <!--facebook-ikon -->
                         </a>
 
                     </li>
                     <li>
-                        <a class="sosiale-link" href="https://www.instagram.com/oslomet/?hl=nb">
+                        <a class="sosiale-link" href="https://www.instagram.com/oslomet/?hl=nb"  aria-label="Ikon til instagram">
                             <i class="fab fa-instagram"></i><!-- instagram-ikon -->
                         </a>
                     </li>
                     <li>
-                        <a class="sosiale-link" href="https://twitter.com/oslomet">
+                        <a class="sosiale-link" href="https://twitter.com/oslomet"  aria-label="Ikon til twitter">
                             <i class="fab fa-twitter"></i> <!-- Twitter-ikon -->
                         </a>
                     </li>
                     <li>
-                        <a class="sosiale-link" href="https://no.linkedin.com/school/oslomet/">
+                        <a class="sosiale-link" href="https://no.linkedin.com/school/oslomet/"  aria-label="Ikon til linkedin">
                             <i class="fab fa-linkedin-in"></i> <!-- LinkedIn-ikon -->
                         </a>
                     </li>
@@ -146,7 +146,7 @@
             </div>
 
             <div class="adresse-kolonne">
-                <p class="adresse-tittel">Kontakt oss</p>
+                <h3 class="adresse-tittel">Kontakt oss</h3>
                 <address class="kontakt">
                     <p class="address">
                         Pilestredet 35. Studenttorget
